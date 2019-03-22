@@ -11,6 +11,7 @@
 
 ### Leitura
  - [Programação em C](http://fig.if.usp.br/~esdobay/c/c.pdf)
+ - [Documentação da biblioteca padrão C](http://www.cplusplus.com/reference/clibrary/)
 
 ### Juízes online
  - [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt)
