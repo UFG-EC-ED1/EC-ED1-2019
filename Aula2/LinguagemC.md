@@ -170,7 +170,32 @@ struct dados {
 }
 
 ```
+## Préprocessador
+Exemplo de uso do préprocessador  para definir uma constante e uma macro.
+```C
+#include <stdio.h>
+#include "meu_arquivo.h"
 
+#define PI 3.14159
+
+#define AREA_CIRCULO(x) (PI * (x) * (x))
+
+int main(void) {
+  double raio;
+  scanf("%lf", &raio);
+  printf("AREA = %.5lf\n", AREA_CIRCULO(raio));
+
+}
+```
+
+Exemplo de código usando condicionais de macro para garantir portabilidade
+```C
+#ifdef __unix__
+# include <unistd.h>
+#elif defined _WIN32
+# include <windows.h>
+#endif
+```
 
 ## Ponteiros
 
@@ -272,15 +297,135 @@ int main (void) {
 
   return 0;
 }
-
 ```
+
+#### Cadeias de caracteres
+
+```C
+#include <stdio.h>  
+
+
+int main(void) {  
+    // cadeia de caracteres é representada por um  
+ // vetor de caracteres terminando com o caractere nulo '\0';  char mensagem[] = "Olá mundo"; // array de tamanho 10 (9 caracteres + 1 terminador)  
+ //                 012345679  
+  printf("Mensagem: %s\n", mensagem); // imprime a mensagem, exemplo  
+
+  char *ptr_mensagem = mensagem;  
+    printf("Mensagem: %s\n", ptr_mensagem);  
+
+    printf("Valor na última posição: %d\n", mensagem[10]); // imprime 0  
+
+
+ // cadeias constantes também podem ser diretamente definidas como ponteiros  char *outra_mensagem = "Hello world";  
+    printf("Mensagem: %s\n", outra_mensagem);  
+
+    return 0;  
+
+}
+```
+
+
+#### Aritmética de ponteiros
+
+Um ponteiro pode ser incrementado ou decrementado.
+```C
+#include <stdio.h>  
+
+int main(void) {  
+  int vetor[] = { 10, 1, 5, 3, 10, 50, 20 }; // 7 elementos  
+  int *vetor_ptr = vetor;  
+
+  printf("%u\n", vetor_ptr); // endereço de vetor[0]  
+  printf("%u\n", vetor_ptr + 1); // endereço de vetor[1]  
+  printf("%u\n", vetor_ptr + 2); // endereço de vetor[2]  
+
+  printf("%d == %d\n", vetor[5], *(vetor + 5));  
+
+  vetor_ptr = &vetor[6]; // último elemento  
+  vetor_ptr--; // agora vetor_ptr aponta para o 6o elemento  
+
+  for (vetor_ptr = vetor; vetor_ptr < vetor + 7; vetor_ptr++) {  
+    printf("%d ", *vetor_ptr);  
+  }
+  printf("\n");
+
+  for (int i = 0; i < 7; i++) {
+    printf("%d ", vetor_ptr[i]);
+  }
+  printf("\n");
+
+  return 0;  
+}
+```
+
 
 #### ``malloc`` &  ``free``
 ```C
 
 // Aloca uma região de memória de size bytes
+// Retorna um ponteiro para o início da posição da memória
+// Retorna um ponteiro nulo (0) se não for possível alocar memória
 void* malloc (size_t size);
 
 // Libera o espaço alocado previamente
 void free (void* ptr);
+```
+
+
+```C
+#include <stdio.h>
+#include <stdlib.h> // malloc e free
+
+int main(void) {
+  int n_entradas, valor;
+
+  printf("Digite a quantidade de entradas: ");
+  scanf("%d", &n_entradas);
+
+  // aloca uma quantidade de memória suficiente para n_entradas inteiros
+  int *vetor = malloc(sizeof(int) * n_entradas);
+
+  printf("Digite os valores\n");
+  for (int i = 0; i < n_entradas; i++) {
+	  scanf("%d", &vetor[i]); // scanf("%d", vetor + i);
+  }
+
+  free(vetor);
+
+  return 0;
+}
+```
+
+#### ``realloc``
+```C
+// modifica o tamanho da memória previamente alocada apontada por ptr para size
+// o novo tamanho pode ser maior ou menor
+// se não consegue alocar o retorno é 0 e o ponteiro anterior continua válido
+void* realloc (void* ptr, size_t size);
+
+// aloca um bloco de memória de tamanho num * size e inicializa com 0s
+void* calloc (size_t num, size_t size);
+```
+
+
+```C
+#include <stdio.h>
+#include <stdlib.h> // malloc e free
+
+int main(void) {
+  int valor;
+
+  // aloca uma quantidade de memória suficiente para n_entradas inteiros
+  int *vetor = malloc(sizeof(int) * n_entradas);
+
+  printf("Digite os valores\n");
+  for (int i = 0; i < n_entradas; i++) {
+	  scanf("%d", &vetor[i]); // scanf("%d", vetor + i);
+  }
+
+  free(vetor);
+
+  return 0;
+}
 ```
