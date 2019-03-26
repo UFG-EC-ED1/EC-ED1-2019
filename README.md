@@ -6,6 +6,8 @@
 
  - [Aula 2](./Aula2/)
 
+ - [Aula 3](./Aula3/)
+
 
 ## Referências
 
