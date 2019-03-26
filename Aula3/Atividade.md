@@ -6,7 +6,7 @@
 
 A biblioteca padrão da linguagem C possui muito poucas funções para manipulação de cadeias de caracteres. Uma das funções muito comumente utilizadas em manipulação de strings é a função ``trim``, que remove espaços e tabulações no início e fim de uma cadeia de caracteres. Essa função é geralmente utilizada para "corrigir" eventuais erros na entrada de dados de usuário.
 
-Assim sendo, a aplicação da função na cadeia de caracteres "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fulano" retornaria uma cadeia de caracteres "Fulano"
+Assim sendo, a aplicação da função na cadeia de caracteres "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estruturas de Dados 1&nbsp;&nbsp;&nbsp;&nbsp;" retornaria uma cadeia de caracteres "Estruturas de Dados 1"
 
 Escreva uma função ``strtrim`` que recebe um ponteiro para uma cadeia de caracteres destino e um ponteiro para uma cadeia de caracteres de origem e escreva no destino a mesma cadeia sem espaços no início e fim da cadeia.
 
@@ -64,3 +64,12 @@ Saída
 2018202 - Joaquim dos Santos - 4.1
 ```
 > Dica: defina um tipo de registro para armazenar os dados dos alunos.
+
+
+### Exercício 3
+
+Implemente uma função ``strreverse`` que inverte a ordem dos caracteres em uma cadeia.
+
+```C
+void strreverse(char *destino, char *origem);
+```
