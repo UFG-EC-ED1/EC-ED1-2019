@@ -17,8 +17,16 @@ Em seguida, escreva um programa que leia uma sequencia de linhas de texto da ent
 // copia origem para destino eliminando caracteres em branco e tabulação do início/fim da string
 void strtrim(char *destino, char *origem);
 
+// Exemplo de como a função pode ser utilizada
 int main(void) {
-  //
+  char *entrada = "      Estruturas de Dados 1   ";
+  char saida[30];
+
+  strtrim(saida, entrada);
+
+  printf("%s\n", saida);
+
+  return 0;
 }
 ```
 > Você pode utilizar aritmética de ponteiros para navegar entre os caracteres de uma cadeia de caracteres
@@ -72,4 +80,47 @@ Implemente uma função ``strreverse`` que inverte a ordem dos caracteres em uma
 
 ```C
 void strreverse(char *destino, char *origem);
+
+
+int main(void) {
+  char *texto = "Ola mundo";
+  char invertido[20];
+
+  strreverse(invertido, texto);
+
+  printf("%s\n", invertido); // Deve imprimir "odnum alO";
+
+  return 0;
+}
+
+```
+
+
+### Exercício 4
+As funções ``strtrim`` e ``strreverse`` implementadas nos exercícios anteriores recebem como parâmetros dois ponteiros/vetores. Um para uma cadeia de caracteres contendo o texto original e outra para uma cadeia de caracteres não inicializada, mas que já foi alocada na memória préviamente.
+
+Reescreva as funções de forma que a memória para armazenar o resultado seja alocada dinâmicamente.
+
+As funções deverão ter o seguinte protótipo.
+
+```C
+
+char *strtrim_aloca(char *origem);
+char *strreverse_aloca(char *origem);
+
+// Exemplo de uso da função
+int main(void) {
+  char *trimmed = strtrim_aloca("    Estruturas de dados 1     ");
+  char *reversed = strreverse_aloca("Ola mundo");
+
+  printf("%s\n", trimmed);
+  printf("%s\n", reversed);
+
+  // Não esqueça de liberar a memória pois os "vetores" foram alocados dinâmicamente
+  free(trimmed);
+  free(reverse);
+
+  return 0;
+}
+
 ```
