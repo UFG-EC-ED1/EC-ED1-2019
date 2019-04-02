@@ -8,7 +8,7 @@ A biblioteca padrão da linguagem C possui muito poucas funções para manipula�
 
 Assim sendo, a aplicação da função na cadeia de caracteres "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estruturas de Dados 1&nbsp;&nbsp;&nbsp;&nbsp;" retornaria uma cadeia de caracteres "Estruturas de Dados 1"
 
-Escreva uma função ``strtrim`` que recebe um ponteiro para uma cadeia de caracteres destino e um ponteiro para uma cadeia de caracteres de origem e escreva no destino a mesma cadeia sem espaços no início e fim da cadeia.
+Escreva uma função ``strtrim`` que recebe um ponteiro para uma cadeia de caracteres destino e um ponteiro para uma cadeia de caracteres de origem e escreva no destino a mesma cadeia sem espaços no início e fim da cadeia. Considere como espaço em branco além do caracter de espaço os caracteres '\t', '\n', '\r'
 
 Em seguida, escreva um programa que leia uma sequencia de linhas de texto da entrada padrão e imprima o resultado da aplicação da função ``strtrim`` em cada linha.
 

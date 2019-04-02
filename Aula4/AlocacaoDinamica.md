@@ -1,11 +1,15 @@
 
 #### Regiões de memória
 ```C
+// Dados não inicializados
 int entrada[100];
 static double media;
 
+// Dados inicializados
 int max_tamanho =  99;
 
+
+// Texto (código)
 int main(void)  {
 	int i, n;
 	int soma;
@@ -21,7 +25,7 @@ int main(void)  {
 }
 ```
 
-#### Exemplos de utilização da pilha de execução
+#### Exemplos utilizados na demonstração da pilha de execução
 
 ```C
 int soma(int x, int y) {
@@ -76,9 +80,10 @@ int main(void) {
 
 #### ``malloc`` & ``free``
 
+
 ```C
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> // malloc e free
 
 int main(void) {
   int n_entradas;
@@ -88,10 +93,14 @@ int main(void) {
 
   // aloca uma quantidade de memória suficiente para n_entradas inteiros
   int *vetor = malloc(sizeof(int) * n_entradas);
+  if (!vetor) {
+	  fprintf(stderr, "Erro ao alocar memória.\n");
+	  return -1;
+  }
 
   printf("Digite os valores\n");
   for (int i = 0; i < n_entradas; i++) {
-	  scanf("%d", &vetor[i]);
+	  scanf("%d", &vetor[i]); // scanf("%d", vetor + i);
   }
 
   free(vetor);
@@ -101,7 +110,7 @@ int main(void) {
 ```
 
 
-Exemplo de código com erro, tenta criar uma cópia de um vetor na pilha:
+Exemplo de código com erro, tenta criar uma cópia de um vetor na pilha de execução:
 ```C
 #include <stdio.h>  
 #include <stdlib.h>  
@@ -113,7 +122,7 @@ int *copia_vetor(int vetor[], int tamanho) {
     for (i = 0; i < tamanho; i++)  
         novo_vetor[i] = vetor[i];  
 
-    return novo_vetor; // ERRO: retorna um endereço na pilha
+    return novo_vetor; // ERRO: retorna um endereço na pilha de execução
 }  
 
 int main(void) {  
@@ -135,7 +144,7 @@ int main(void) {
 }
 ```
 
-Exemplo de código para criar a cópia de um vetor.
+Exemplo de código para criar a cópia de um vetor no heap:
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -185,6 +194,7 @@ int main(void) {
 
 #### ``realloc``
 
+Exemplo de código que lê uma quantidade indefinida de valores de entrada, realocando o vetor de acordo com a necessidade
 ```C
 #include <stdio.h>
 #include <stdlib.h> // malloc e free
@@ -199,7 +209,7 @@ int main(void) {
 	  if (qtd_elementos == tamanho_alocado) {
 		  int novo_tamanho = tamanho_alocado * 2;
 		  int *novo_vetor = realloc(vetor, sizeof(int) * novo_tamanho);
-		  if (vetor == NULL) {
+		  if (novo_vetor == NULL) {
 			  fprintf(stderr, "Não foi possível alocar memória para armzenar mais itens\n");
 			  return -1;
 		  }
@@ -217,33 +227,6 @@ int main(void) {
 ```
 
 
-```C
-#include <stdio.h>
-#include <stdlib.h> // malloc e free
-
-int main(void) {
-  int n_entradas;
-
-  printf("Digite a quantidade de entradas: ");
-  scanf("%d", &n_entradas);
-
-  // aloca uma quantidade de memória suficiente para n_entradas inteiros
-  int *vetor = malloc(sizeof(int) * n_entradas);
-  if (!vetor) {
-	  fprintf(stderr, "Erro ao alocar memória.\n");
-	  return -1;
-  }
-
-  printf("Digite os valores\n");
-  for (int i = 0; i < n_entradas; i++) {
-	  scanf("%d", &vetor[i]); // scanf("%d", vetor + i);
-  }
-
-  free(vetor);
-
-  return 0;
-}
-```
 
 
 #### Exemplos de tipos de alocação
@@ -293,8 +276,8 @@ int main(void) {
 
 #### Exemplos usando aritmética de ponteiros
 
+Exemplos de expressões equivalentes usando um indexador e aritmética de ponteiros
 ```C
-
 int main(void) {
 	int v[] = { 10, 20, 30, 40 };
 	int *v_ptr = v;
@@ -314,3 +297,13 @@ int main(void) {
 	return 0;
 }
 ```
+
+
+#### Algumas referências
+https://www.geeksforgeeks.org/memory-layout-of-c-program/
+
+https://www.usna.edu/Users/cs/aviv/classes/ic221/s16/lec/08/lec.html
+
+https://www.usna.edu/Users/cs/aviv/classes/ic221/s16/lec/09/lec.html
+
+https://gabrieletolomei.wordpress.com/miscellanea/operating-systems/in-memory-layout/

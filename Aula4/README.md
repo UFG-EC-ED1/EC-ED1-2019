@@ -2,4 +2,4 @@
 
 [Exemplos](AlocacaoDinamica.md)
 
-[Atividade](./Atividade.md)
+[Atividade para a aula seguinte](./Atividade.md)

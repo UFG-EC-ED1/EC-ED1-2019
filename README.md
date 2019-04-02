@@ -10,6 +10,7 @@
 
  - [Aula 4](./Aula4/)
 
+ - [Aula 5](./Aula5/)
 
 ## Referências
 
