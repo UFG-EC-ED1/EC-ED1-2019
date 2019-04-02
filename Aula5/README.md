@@ -7,3 +7,5 @@ Em [definição de módulos em C](./ModulosEmC.md) você pode encontrar algumas 
 Na pasta [ed1_string](./ed1_string/) há um esqueleto que pode ser utilizado na implementação das funções de manipulação de strings descritas no exercício.
 
 Em [Linguagem C](../Aula2/LinguagemC.md) há exemplos de declaração usando estruturas em C.
+
+Para a atividade é possível utilizar as funções já disponíveis na biblioteca padrão da linguagem C. A referência para as funções pode ser encontrada em http://www.cplusplus.com/reference/
