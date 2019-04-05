@@ -7,7 +7,7 @@ void strtrim(char *destino, const char *origem) {
   while (*origem == ' ')
     origem++;
 
-    strcpy(destino, origem);
+  strcpy(destino, origem);
 }
 
 void strreverse(char *destino, const char *origem) {

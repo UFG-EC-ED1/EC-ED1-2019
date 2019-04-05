@@ -18,6 +18,10 @@
  - [Programação em C](http://fig.if.usp.br/~esdobay/c/c.pdf)
  - [Documentação da biblioteca padrão C](http://www.cplusplus.com/reference/clibrary/)
 
+
+### Slides de outros cursos
+ - [Algoritmos e Estruturas de Dados 1 - UFG - CC](http://www.inf.ufg.br/~hebert/disc/aed1/)
+
 ### Juízes online
  - [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt)
  - [sphere online judge](https://br.spoj.com/)
