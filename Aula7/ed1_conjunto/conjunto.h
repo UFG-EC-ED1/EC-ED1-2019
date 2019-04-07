@@ -36,15 +36,11 @@ bool
 conjunto_contem(conjunto_t *conjunto, int elemento);
 
 /**
-  Adiciona um elemento ao conjunto.
-  retorna false se não for possível adicionar
-*/
-
-/**
  * Adiciona um elemento ao conjunto.
  * @param conjunto conjunto
  * @param elemento elemento a ser adicionado
- * @return false se houve um problema ao alocar memória, false se o elemento já pertence ou foi incluído com sucesso
+ * @return false se houve um problema ao alocar memória, true se o elemento já
+           pertence ou foi incluído com sucesso
  */
 bool
 conjunto_adiciona(conjunto_t *conjunto, int elemento);
