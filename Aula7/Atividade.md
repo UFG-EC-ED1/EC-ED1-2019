@@ -63,7 +63,7 @@ conjunto_remove(conjunto_t *conjunto, int elemento);
 
 >Além dessas, uma outra operação é necessária devido à natureza da linguagem C que requere um gerenciamento "manual" da alocação de memória. A operação ``conjunto_libera(conjunto_t *)`` tem essa função. Essa operação deve liberar a memória alocada para o vetor que armazena os valores do conjunto e da própria estrutura que mantém informações do conjunto.
 
-Apesar de a interface conter várias operações, a maioria delas pode ser implementadas em função de poucas operações básicas como adicionar, remover e verificar se um elemento está presente em um conjunto.
+Apesar de a interface conter várias operações, a maioria delas pode ser implementada em função de poucas operações básicas como adicionar, remover e verificar se um elemento está presente em um conjunto.
 
 Por exemplo, a operação ``conjunto_novo_lendo_vetor()`` pode ser implementada utilizando a operação ``conjunto_novo()`` para criar um novo conjunto vazio e chamando sucessivamente a operação ``conjunto_adiciona()`` para adicionar cada item do vetor ao conjunto.
 
@@ -73,6 +73,7 @@ Por isso, o foco principal deve se dar na implementação dessas operações bá
 
 
 ## Organização da implementação
+
 Para essa atividade vamos organizar o código em 3 arquivos: o cabeçalho descrevendo o tipo abstrato [conjunto.h](./ed1_conjunto/conjunto.h), a implementação [conjunto.c](./ed1_conjunto/conjunto.c) e um arquivo de teste que verifica se a implementação está correta [conjunto_test.c](./ed1_conjunto/conjunto_test.c). Os arquivos de cabeçalho e teste já estão fornecidos e **não devem ser alterados**. A sua solução estará correta se o programa de teste executar sem nenhum erro.
 
 Se você está utilizando uma IDE como Code::Blocks basta criar um projeto novo e adicionar esses arquivos ao projeto. Caso esteja utilizando a linha de comandos há um arquivo [Makefile](./ed1_conjunto/Makefile) que permite compilar e executar os testes digitando ``make test``.
