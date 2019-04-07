@@ -12,6 +12,8 @@
 
  - [Aula 5](./Aula5/)
 
+ - [Aula 6](./Aula6/)
+
 ## Referências
 
 ### Leitura
