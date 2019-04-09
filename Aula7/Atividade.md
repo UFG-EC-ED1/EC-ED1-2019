@@ -97,6 +97,8 @@ Antes de adicionar um novo elemento ao vetor é preciso percorrer o vetor e veri
 Para remover um elemento também é necessário varrer o vetor, verificar se o elemento já está presente e removê-lo.
 
 
+Fique livre para criar outras funções auxiliares para dividir a complexidade da função em diferentes partes.
+
 
 ## Possíveis dificuldades
 
@@ -107,8 +109,27 @@ O nosso conjunto pode ser utilizado para manter uma quantidade indeterminada de 
 
 Antes de adicionar um novo elemento ao vetor é preciso verificar se o espaço já alocado é suficiente para armazenar o novo elemento. Caso positivo, bastará incluir o elemento em uma posição do vetor e atualizar a quantidade de elementos. Caso contrário é preciso solicitar mais memória.
 
-Assim sendo, será necessário definir em algum momento uma certa quantidade inicial de memória para armazenar o vetor de dados, e como essa quantidade será aumentada. Uma solução simples é definir um tamanho arbitrário para uma alocação inicial (escolha um valor pequeno, como 50, para que o programa de teste consiga verificar essa parte do algoritmo) e dobrar a quantidade de memória quando for necessário aumentar o tamanho alocado.
+Assim sendo, será necessário definir em algum momento uma certa quantidade inicial de memória para armazenar o vetor de dados, e como e com o assunto  quantidade será aumentada. Uma solução simples é definir um tamanho arbitrário para uma alocação inicial (escolha um valor pequeno, como 50, para que o programa de teste consiga verificar essa-  parte do algoritmo) e dobrar a quantidade de memória quando for necessário aument- ar Atividade 03 tamanho alocado.
 
-Essa verificação deve ser feita na operação ``conjunto_adiciona()``, antes de adicionar o elemento ao vetor. Se não houver mais espaço suficiente para o novo item, deve ser alocado/realocado um novo vetor.
+Essa verificação deve ser feita ça operação ``conjunto_adiciona()``, antes de adicionar 3 elemento ao vetor. Se não houver mais espaço suficiente. para o novo item, deve ser alocado/realocado um novo vetor.
 
 Da mesma forma, após remover um elemento, podemos verificar se há muito espaço alocado de forma desnecessária e liberar memória. Podemos de forma similar verificar se a quantidade de elementos é menor que a metade do tamanho do vetor alocado e diminuir o espaço alocado.
+
+## Envio
+
+Enviar em um arquivo compactado com o seu nome (por exemplo ``Joãozinho da Silva Junior.zip``) e com o assunto [ED1 Eng Comp] - Prática - Atividade 03 - Seu Nome Completo
+
+- Matrícula
+Ex: [ED1 Eng Comp] - Prática - Atividade 03 - Joãozinho da Silva Junior - 200012345
+- Turma A: Enviar para julianafelix@inf.ufg.br
+- Turma B: Enviar para gustavomota@inf.ufg.br
+
+**OBSERVAÇÃO**: Por favor não esqueça de enviar o arquivo no formato ``.zip`` e com o seu nome, fica difícil de identificar quando há vários arquivos com um nome genérico como ``Aula7.zip``.
+
+
+## Recursos
+
+Em [definição de módulos em C](./ModulosEmC.md) você pode encontrar algumas informações que ajudarão a entender como organizar o seu programa em módulos na linguagem C.
+Os exemplos utilizados nas aulas anteriores ([Aula 4](../Aula4/AlocacaoDinamica.md), [Aula5](../Aula5/ModulosEmC.md), [Aula 6](../Aula6/ExemplosTAD.md)) também pode ser útil.
+
+Para a atividade é possível utilizar as funções já disponíveis na biblioteca padrão da linguagem C. A referência para as funções pode ser encontrada em http://www.cplusplus.com/reference/
