@@ -16,11 +16,17 @@
 
  - [Aula 7](./Aula7/)
 
+ - [Aula 8](./Aula8/)
+
 ## Referências
 
 ### Leitura
  - [Programação em C](http://fig.if.usp.br/~esdobay/c/c.pdf)
  - [Documentação da biblioteca padrão C](http://www.cplusplus.com/reference/clibrary/)
+
+
+### Ferramentas
+ - [Visualizador de execução](http://www.pythontutor.com/c.html#mode=edit)
 
 
 ### Slides de outros cursos
@@ -32,3 +38,6 @@
 
 ### Portal
  - [SIGAA](http://sigaa.sistemas.ufg.br)
+
+### Outros sites
+ - [Linguagem C](http://linguagemc.com.br/)
