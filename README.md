@@ -18,7 +18,7 @@
  - [Atividade 3](./Aula7/Atividade.md)
 
 ## Documentos
- - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo Cipriano Mota Sousa.pdf)
+ - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo Cipriano Mota Sousa.pdff)
 
 ## Referências
 
@@ -49,4 +49,4 @@
 - P. Deitel, H. Deitel. C: Como Programar. Pearson Universidades, 2011.
 - M. Tenenbaum, Y. Langsam, M. J. Augenstein. Estruturas de Dados Usando C. Pearson Makron Books, 1995.
 - Markenzon, Lilian; Szwarcfiter, Jayme Luiz. Estruturas de Dados e seus Algoritmos. Rio de Janeiro: LTC, 2010.
-- 
+-
