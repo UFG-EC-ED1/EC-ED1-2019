@@ -26,12 +26,14 @@ test_conjunto_novo(void) {
     conjunto_t *conjunto = conjunto_novo();
     assert(conjunto != NULL);
     assert(0 == conjunto_qtd_itens(conjunto));
+
     conjunto_libera(conjunto);
 
 
     int vetor_inicial[] = {2, 5, 2, 3, 4, 3};
     conjunto = conjunto_novo_lendo_vetor(vetor_inicial, 6);
     assert(4 == conjunto_qtd_itens(conjunto));
+
     conjunto_libera(conjunto);
 }
 
@@ -202,4 +204,6 @@ main(void) {
     test_conjunto_iguais();
     test_conjunto_interseccao();
     test_conjunto_uniao();
+
+    return 0;
 }
