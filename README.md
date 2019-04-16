@@ -10,7 +10,7 @@
  - [Aula 6](./Aula6/)
  - [Aula 7](./Aula7/)
  - [Aula 8](./Aula8/)
- - [Aula 9](./Aula9/) 
+ - [Aula 9](./Aula9/)
 
 
 ## Atividades
@@ -19,7 +19,7 @@
  - [Atividade 3](./Aula7/Atividade.md)
 
 ## Documentos
- - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo Cipriano Mota Sousa.pdff)
+ - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo Cipriano Mota Sousa.pdf)
 
 ## Referências
 
