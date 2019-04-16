@@ -148,3 +148,24 @@ c. (Bonus) Implemente uma função que libere a memória utilizada pela lista. P
 ```C
 void lista_int_libera(ListaInt *lista);
 ```
+
+## Exercício 3 (Extra)
+
+Vocês devem ter percebido que quase todas as funções de manipulação de nós encadeados é preciso verificar o caso onde a cabeça (nó inicial) é nulo, como um caso especial de lista.
+
+Isso acontece porque para remover ou adicionar um item de uma lista encadeada é necessário sempre encontrar o nó anterior à posição onde o item será removido/adicionado. Na forma como estávamos trabalhando, o primeiro elemento era nulo quando a lista está vazia e portanto, uma tentativa de acessar o nó seguinte utilizando o ponteiro ``proximo`` geraria um erro.
+
+Uma solução geralmente utilizada para esse problema é a criação de um nó "sentinela". Um nó vazio, que não guarda nenhum valor como dado, mas cujo ponteiro proximo aponta para a cabeça. O uso de tal nó permite generalizar os algoritmos de inserção/remoção na lista, pois mesmo no caso de a lista estar vazia existe um nó anterior ao início, que é o nó sentinela.
+
+
+
+
+
+```
+  Nó sentinela          nó 0             nó 1                    nó final
+   ___________      ___________      ___________               ___________
+  |     |     |    |     |     |    |     |     |             |     |     |
+  |  ?  |    =====>|  3  |    =====>|  1  |    =====> .... ==>|  5  |NULL |
+  |_____|_____|    |_____|_____|    |_____|_____|             |_____|_____|
+
+```

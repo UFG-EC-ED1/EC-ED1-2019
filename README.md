@@ -10,6 +10,7 @@
  - [Aula 6](./Aula6/)
  - [Aula 7](./Aula7/)
  - [Aula 8](./Aula8/)
+ - [Aula 9](./Aula9/) 
 
 
 ## Atividades
