@@ -19,7 +19,7 @@
  - [Atividade 3](./Aula7/Atividade.md)
 
 ## Documentos
- - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo Cipriano Mota Sousa.pdf)
+ - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
 
 ## Referências
 
