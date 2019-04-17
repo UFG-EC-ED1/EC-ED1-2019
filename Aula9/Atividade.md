@@ -4,7 +4,9 @@
 
 ## Exercício 1
 Nesse exercício utilizaremos uma estrutura de nós encadeados para representar uma lista. O código abaixo implementa algumas das funções para manipulação de nós encadeados que vimos na aula anterior.
-> Obs: Para simplificar a implementação e focalizarmos na compreensão e implementação dos algoritmos vamos ignorar temporariamente o tratamento de memória não alocada e considerarmos que a função ``malloc()`` sempre consegue alocar a quantidade de memória requisitada.
+> OBS<sub>1</sub>: Para simplificar a implementação vamos focalizar na compreensão e implementação dos algoritmos. Para isso vamos ignorar temporariamente o tratamento de memória não alocada e considerar que a função ``malloc()`` sempre consegue alocar a quantidade de memória requisitada.
+
+> OBS<sub>2</sub>: O código abaixo não possui uma função ``main()`` e portanto não é diretamente executável. Como alguns alunos solicitaram, coloquei à  disposição em [lista.c](../Lista4/Exercicio1/lista.c) um arquivo contendo os protótipos das funções e alguns testes para validar a implementação das funções.
 
 ```C
 #include <stdio.h>
@@ -74,11 +76,11 @@ no_int_remove_inicio(NoInt *cabeca) {
 }
 
 size_t
-lista_no_tamanho(NoInt *cabeca) {
+no_int_tamanho(NoInt *cabeca) {
     if (cabeca == NULL)
         return 0;
 
-    return 1 + lista_no_tamanho(cabeca->proximo);
+    return 1 + no_int_tamanho(cabeca->proximo);
 }
 
 ```
@@ -145,13 +147,17 @@ b. Como vimos no exercício anterior, para adicionar um item ao fim da lista é 
 
 c. (Bonus) Implemente uma função que libere a memória utilizada pela lista. Para isso é necessário liberar não só a estrutura alocada pela lista, mas a estrutura utilizada por cada nó.
 
+d. (Bonus) Caso você tenha implementado a função anterior de forma iterativa, implemente a novamente utilizando recursão.
+
 ```C
 void lista_int_libera(ListaInt *lista);
 ```
 
 ## Exercício 3
 
-Crie uma implementação de uma lista ordenada. Em uma lista ordenada os itens são sempre mantidos em ordem. Sempre que um item é adicionado, ele é colocado diretamente em sua posição. Para esse exercício você só precisa implementar a função ``lista_ordenada_adiciona()``.
+Crie uma implementação de uma lista ordenada. Em uma lista ordenada os itens são sempre mantidos em ordem. Sempre que um item é adicionado, ele é colocado diretamente em sua posição. Para esse exercício você só precisa implementar a função ``lista_adiciona()``.
+
+> O arquivo .c com os testes será disponibilizado em breve
 
 ```C
 typedef struct lista_no lista_no_t;
