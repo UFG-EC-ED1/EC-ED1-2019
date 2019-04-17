@@ -17,6 +17,7 @@
  - [Atividade 1](./Aula1/Lista1.pdf)
  - [Atividade 2](./Aula4/Atividade.md)
  - [Atividade 3](./Aula7/Atividade.md)
+ - [Atividade 4](./Aula9/Atividade.md)
 
 ## Documentos
  - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
