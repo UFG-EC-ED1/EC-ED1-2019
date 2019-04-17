@@ -74,7 +74,7 @@ no_int_remove_inicio(NoInt *cabeca) {
 }
 
 size_t
-lista_no_tamanho(ListaNo *cabeca) {
+lista_no_tamanho(NoInt *cabeca) {
     if (cabeca == NULL)
         return 0;
 
@@ -149,7 +149,71 @@ c. (Bonus) Implemente uma função que libere a memória utilizada pela lista. P
 void lista_int_libera(ListaInt *lista);
 ```
 
-## Exercício 3 (Extra)
+## Exercício 3
+
+Crie uma implementação de uma lista ordenada. Em uma lista ordenada os itens são sempre mantidos em ordem. Sempre que um item é adicionado, ele é colocado diretamente em sua posição. Para esse exercício você só precisa implementar a função ``lista_ordenada_adiciona()``.
+
+```C
+typedef struct lista_no lista_no_t;
+struct lista_no {
+  int item;
+  lista_no_t *proximo;
+};
+
+typedef struct {
+  lista_no_t *cabeca;
+  size_t tamanho;
+} lista_t;
+
+#define lista_tamanho(l) ((l)->tamanho)
+#define lista_vazia(l) ((l)->tamanho == 0)
+#define lista_no_inicio(l) ((l)->cabeca)
+
+void
+lista_adiciona(lista_t *lista, int item);
+
+int
+lista_obtem(lista_t *lista, int posicao) {
+  assert(posicao < lista_tamanho(lista));
+
+  lista_no_t *no = lista->cabeca;
+  while (posicao-- > 0)
+    no = no->proximo;
+
+  return no->item;
+}
+
+int
+lista_remove_inicio(lista_t *lista) {
+  assert(lista->cabeca != NULL);
+
+  lista_no_t *temp = lista->cabeca;
+  lista->cabeca = temp->proximo;
+  int result = temp->item;
+  free(temp);
+  return result;
+}
+
+int
+lista_remove(lista_t *lista, size_t posicao) {
+  if (posicao == 0)
+    return lista_remove_inicio(lista);
+
+  No *anterior = lista->cabeca;
+  while (--posicao > 0)
+    anterior = anterior->proximo;
+
+  lista_no_t *temp = anterior->proximo;
+  anterior->proximo = temp->proximo;
+  int result = temp->item;
+  free(temp);
+
+  return result;
+}
+
+```
+
+## Exercício 4 (Extra)
 
 Vocês devem ter percebido que quase todas as funções de manipulação de nós encadeados é preciso verificar o caso onde a cabeça (nó inicial) é nulo, como um caso especial de lista.
 
@@ -157,8 +221,7 @@ Isso acontece porque para remover ou adicionar um item de uma lista encadeada é
 
 Uma solução geralmente utilizada para esse problema é a criação de um nó "sentinela". Um nó vazio, que não guarda nenhum valor como dado, mas cujo ponteiro proximo aponta para a cabeça. O uso de tal nó permite generalizar os algoritmos de inserção/remoção na lista, pois mesmo no caso de a lista estar vazia existe um nó anterior ao início, que é o nó sentinela.
 
-
-
+Reescreva a lista criada no exercício 2 utilizando um nó sentinela.
 
 
 ```
