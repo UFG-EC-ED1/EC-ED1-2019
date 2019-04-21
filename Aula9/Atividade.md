@@ -50,17 +50,17 @@ no_int_adiciona_fim(NoInt *cabeca, int item) {
 
 NoInt *
 no_int_adiciona(NoInt *cabeca, int posicao, int item) {
-  if (cabeca == NULL)
-      return no_int_adiciona_inicio(cabeca, item);
+    if (cabeca == NULL || posicao == 0)
+        return no_int_adiciona_inicio(cabeca, item);
 
-  NoInt *no = cabeca;
+    NoInt *no = cabeca;
 
-  while (no->proximo != NULL && posicao-- > 0)
-      no = no->proximo;
+    while (no->proximo != NULL && --posicao > 0)
+        no = no->proximo;
 
-  no->proximo = no_int_novo(item, NULL);
+    no->proximo = no_int_novo(item, no->proximo);
 
-  return cabeca;
+    return cabeca;
 }
 
 NoInt *
@@ -82,7 +82,6 @@ no_int_tamanho(NoInt *cabeca) {
 
     return 1 + no_int_tamanho(cabeca->proximo);
 }
-
 ```
 
 a. Considerando essa estrutura acima, implemente uma função que obtenha o nó em uma determinada posição da lista. Caso a posição seja maior que o tamanho da lista a função deve retornar ``NULL``.

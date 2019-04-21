@@ -40,15 +40,15 @@ no_int_adiciona_fim(NoInt *cabeca, int item) {
 
 NoInt *
 no_int_adiciona(NoInt *cabeca, int posicao, int item) {
-  if (cabeca == NULL)
+  if (cabeca == NULL || posicao == 0)
       return no_int_adiciona_inicio(cabeca, item);
 
   NoInt *no = cabeca;
 
-  while (no->proximo != NULL && posicao-- > 0)
+  while (no->proximo != NULL && --posicao > 0)
       no = no->proximo;
 
-  no->proximo = no_int_novo(item, NULL);
+  no->proximo = no_int_novo(item, no->proximo);
 
   return cabeca;
 }
@@ -114,12 +114,19 @@ main(void) {
   assert(NULL == no_int_obtem(lista, 3));
   assert(NULL == no_int_obtem(lista, 10));
 
+  // Adiciona um item em uma posição específic
+  lista = no_int_adiciona(lista, 2, 4);
+  assert(4 == no_int_tamanho(lista));
+  assert(4 == no_int_obtem(lista, 2)->item);
+
+
   lista = no_int_inverte(lista);
 
   // Verifica o resultado da função inverte
   assert(1 == no_int_obtem(lista, 0)->item);
-  assert(2 == no_int_obtem(lista, 1)->item);
-  assert(3 == no_int_obtem(lista, 2)->item);
+  assert(4 == no_int_obtem(lista, 1)->item);
+  assert(2 == no_int_obtem(lista, 2)->item);
+  assert(3 == no_int_obtem(lista, 3)->item);
 
   no_int_libera_lista(lista);
 
