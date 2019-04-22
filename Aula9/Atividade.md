@@ -156,7 +156,7 @@ void lista_int_libera(ListaInt *lista);
 
 Crie uma implementação de uma lista ordenada. Em uma lista ordenada os itens são sempre mantidos em ordem. Sempre que um item é adicionado, ele é colocado diretamente em sua posição. Para esse exercício você só precisa implementar a função ``lista_adiciona()``.
 
-> O esqueleto para a implementação e testes está disponível em [Lista4/Exercicio3](../Lista4/Exercicio1)
+> O esqueleto para a implementação e testes está disponível em [Lista4/Exercicio3](../Lista4/Exercicio3)
 
 ```C
 typedef struct lista_no lista_no_t;

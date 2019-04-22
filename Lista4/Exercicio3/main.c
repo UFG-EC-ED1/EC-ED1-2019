@@ -26,8 +26,6 @@ int main() {
     }
 
 
-
-
     lista_libera(lista);
 
     return 0;
