@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <assert.h>
+#include "lista_ordenada.h"
+
+int main() {
+    lista_t *lista = lista_nova();
+    assert(0 == lista_tamanho(lista));
+
+    int vetor[] = {10, 2, 5, 3, 1, 4, 10, 20, 2, 3};
+
+    for (int i = 0; i < 10; i++) {
+        lista_adiciona(lista, vetor[i]);
+        assert(i + 1 == lista_tamanho(lista));
+    }
+
+    lista_no_t *no = lista->cabeca;
+    while (no != NULL && no->proximo != NULL) {
+        assert(no->item <= no->proximo->item);
+        no = no->proximo;
+    }
+
+    lista_libera(lista);
+
+    return 0;
+}
