@@ -21,6 +21,9 @@ lista_remove_inicio(lista_t *lista) {
     lista->cabeca = temp->proximo;
     int result = temp->item;
     free(temp);
+
+    lista->tamanho--;
+
     return result;
 }
 
@@ -40,14 +43,18 @@ lista_remove(lista_t *lista, size_t posicao) {
     int result = temp->item;
     free(temp);
 
+    lista->tamanho--;
+
     return result;
 }
 
 lista_t *
 lista_nova(void) {
     lista_t *lista = malloc(sizeof(lista_t));
+
     lista->cabeca = NULL;
     lista->tamanho = 0;
+
     return lista;
 }
 
