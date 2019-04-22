@@ -156,7 +156,7 @@ void lista_int_libera(ListaInt *lista);
 
 Crie uma implementação de uma lista ordenada. Em uma lista ordenada os itens são sempre mantidos em ordem. Sempre que um item é adicionado, ele é colocado diretamente em sua posição. Para esse exercício você só precisa implementar a função ``lista_adiciona()``.
 
-> O arquivo .c com os testes será disponibilizado em breve
+> O esqueleto para a implementação e testes está disponível em [Lista4/Exercicio3](../Lista4/Exercicio1)
 
 ```C
 typedef struct lista_no lista_no_t;
@@ -177,45 +177,52 @@ typedef struct {
 void
 lista_adiciona(lista_t *lista, int item);
 
+
 int
 lista_obtem(lista_t *lista, int posicao) {
-  assert(posicao < lista_tamanho(lista));
+    assert(posicao < lista_tamanho(lista));
 
-  lista_no_t *no = lista->cabeca;
-  while (posicao-- > 0)
-    no = no->proximo;
+    lista_no_t *no = lista->cabeca;
+    while (posicao-- > 0)
+        no = no->proximo;
 
-  return no->item;
+    return no->item;
 }
 
 int
 lista_remove_inicio(lista_t *lista) {
-  assert(lista->cabeca != NULL);
+    assert(lista->cabeca != NULL);
 
-  lista_no_t *temp = lista->cabeca;
-  lista->cabeca = temp->proximo;
-  int result = temp->item;
-  free(temp);
-  return result;
+    lista_no_t *temp = lista->cabeca;
+    lista->cabeca = temp->proximo;
+    int result = temp->item;
+    free(temp);
+
+    lista->tamanho--;
+
+    return result;
 }
 
 int
 lista_remove(lista_t *lista, size_t posicao) {
-  if (posicao == 0)
-    return lista_remove_inicio(lista);
+    assert(posicao < lista_tamanho(lista));
 
-  No *anterior = lista->cabeca;
-  while (--posicao > 0)
-    anterior = anterior->proximo;
+    if (posicao == 0)
+        return lista_remove_inicio(lista);
 
-  lista_no_t *temp = anterior->proximo;
-  anterior->proximo = temp->proximo;
-  int result = temp->item;
-  free(temp);
+    lista_no_t *anterior = lista->cabeca;
+    while (--posicao > 0)
+        anterior = anterior->proximo;
 
-  return result;
+    lista_no_t *temp = anterior->proximo;
+    anterior->proximo = temp->proximo;
+    int result = temp->item;
+    free(temp);
+
+    lista->tamanho--;
+
+    return result;
 }
-
 ```
 
 ## Exercício 4 (Extra)
