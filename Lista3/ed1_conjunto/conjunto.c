@@ -102,40 +102,53 @@ conjunto_novo_lendo_vetor(int *vetor, size_t qtd) {
 }
 
 
-/**
- * Verifica se um conjunto já contem um elemento.
- * @param conjunto conjunto
- * @param elemento elemento
- * @return true se o elemento pertence ao conjunto
+/*
+ * Função auxiliar que obtem a posição no vetor onde o elemento se encontra ou
+ * -1 case o elemento não seja encontrado
  */
-bool
-conjunto_contem(conjunto_t *conj, int elemento) {
-    // IMPLEMENTAÇÃO
+static int
+conjunto_encontra_item(conjunto_t *conj, int elemento) {
+    for (int i = 0; i < conj->qtd; i++)
+        if (conj->elementos[i] == elemento)
+            return i;
+
+    return -1;
 }
 
-/**
- * Adiciona um elemento ao conjunto.
- * @param conjunto conjunto
- * @param elemento elemento a ser adicionado
- * @return false se houve um problema ao alocar memória, false se o elemento já pertence ou foi incluído com sucesso
- */
+
+bool
+conjunto_contem(conjunto_t *conj, int elemento) {
+    return conjunto_encontra_item(conj, elemento) != -1;
+}
+
+
 bool
 conjunto_adiciona(conjunto_t *conj, int elemento) {
+    if (conjunto_contem(conj, elemento))
+        return true;
+
     if (!conjunto_vetor_cabe(conj, conj->qtd))
         return false;
 
-    // IMPLEMENTAÇÃO
+    conj->elementos[conj->qtd] = elemento;
+    conj->qtd++;
+
+    return true;
 }
 
-/**
- * Remove um elemento do conjunto
- * @param conjunto conjunto
- * @param elemento inteiro a ser removido
- * @return true se o elemento pertence ao conjunto
- */
+
 bool
 conjunto_remove(conjunto_t *conj, int elemento) {
-    // IMPLEMENTAÇÃO
+    int i = conjunto_encontra_item(conj, elemento);
+    if (i < 0)
+        return false;
+
+    conj->qtd--;
+    conj->elementos[i] = conj->elementos[conj->qtd];
+
+    conjunto_libera_desnecessario(conj);
+
+    return true;
 }
 
 
@@ -152,9 +165,8 @@ conjunto_intersecao(conjunto_t *a, conjunto_t *b) {
         return NULL;
 
     for (int i = 0; i < intersect->qtd; i++) {
-        if (!conjunto_contem(b, intersect->elementos[i])) {
+        if (!conjunto_contem(b, intersect->elementos[i]))
             conjunto_remove(intersect, intersect->elementos[i]);
-        }
     }
 
     return intersect;
