@@ -227,13 +227,18 @@ lista_remove(lista_t *lista, size_t posicao) {
 
 ## Exercício 4 (Extra)
 
-Vocês devem ter percebido que quase todas as funções de manipulação de nós encadeados é preciso verificar o caso onde a cabeça (nó inicial) é nulo, como um caso especial de lista.
+Vocês devem ter percebido que quase todas as funções de manipulação de nós encadeados é preciso verificar o caso onde a cabeça (nó inicial) é nulo ou a adição/remoção no início como um caso especial.
 
-Isso acontece porque para remover ou adicionar um item de uma lista encadeada é necessário sempre encontrar o nó anterior à posição onde o item será removido/adicionado. Na forma como estávamos trabalhando, o primeiro elemento era nulo quando a lista está vazia e portanto, uma tentativa de acessar o nó seguinte utilizando o ponteiro ``proximo`` geraria um erro.
+Isso acontece porque para remover ou adicionar um item de uma lista encadeada é necessário sempre encontrar o nó anterior à posição onde o item será removido/incluído. No entanto, quando a lista está vazia ou quando o elemento tem de ser removido/incluído na primeira posição (índice 0) não há um nó anterior.
 
-Uma solução geralmente utilizada para esse problema é a criação de um nó "sentinela". Um nó vazio, que não guarda nenhum valor como dado, mas cujo ponteiro proximo aponta para a cabeça. O uso de tal nó permite generalizar os algoritmos de inserção/remoção na lista, pois mesmo no caso de a lista estar vazia existe um nó anterior ao início, que é o nó sentinela.
+Uma solução geralmente utilizada para esse problema é a criação de um nó "sentinela". Um nó vazio, que não guarda nenhum valor como dado, cujo ponteiro ``proximo`` aponta para o primeiro elemento da lista.
 
-Reescreva a lista criada no exercício 2 utilizando um nó sentinela.
+ O uso de tal nó permite generalizar os algoritmos de remoção/inclusão de itens na lista, pois sempre há, para qualquer nó da lista, um nó anterior. Neste caso, o sentinela funciona como um nó na posição -1.
+
+Para remoção/inserção de itens na lista podemos iniciar com um ponteiro apontando para a sentinela e percorrer a lista até encontrar o nó anterior à posição desejada para inserção/remoção. Após encontrar o nó anterior basta realizar as operações de inserção/remoção de nó.
+
+Reescreva as listas criadas nos exercícios 2 e 3 utilizando um nó sentinela.
+
 
 
 ```
