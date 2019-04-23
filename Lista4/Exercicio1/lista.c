@@ -73,19 +73,19 @@ no_int_tamanho(NoInt *cabeca) {
     return 1 + no_int_tamanho(cabeca->proximo);
 }
 
-NoInt *no_int_obtem(NoInt *lista, int posicao) {
+NoInt *no_int_obtem(NoInt *cabeca, int posicao) {
 
 }
 
-NoInt *no_int_inverte(NoInt *lista) {
+NoInt *no_int_inverte(NoInt *cabeca) {
 
 }
 
-NoInt *no_int_filtro(NoInt *lista, int valor_filtrado) {
+NoInt *no_int_filtro(NoInt *cabeca, int valor_filtrado) {
 
 }
 
-NoInt *no_int_libera_lista(NoInt *lista) {
+NoInt *no_int_libera_lista(NoInt *cabeca) {
 
 }
 
