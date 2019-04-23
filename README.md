@@ -12,7 +12,7 @@
 | [7](./Aula7/) | 09/04 | **Tipos abstratos de dados** | Implementação de um conjunto usando vetor. Modularização e testes.<br/>[Slides](https://docs.google.com/presentation/d/1rEjjMzBfdA4ZVMYRAmPx9C3XKHpJFgmG-mURtaU9O2E/) | Atividade 3: TAD<br/>[Enunciado](./Aula7/Atividade.md), [Solução](./Lista3/)|
 | [8](./Aula8/) | 12/04 | **Listas lineares** | Introdução: conceitos, encadeamento, operações, aplicações; variações de encadeamento: circular e duplo<br/>[Slides](https://docs.google.com/presentation/d/16ZbIht-k48Ajc9BVuXNGW73nedEnJZrCEVmgSn-oims/), [Exemplos usando encadeamento](./Aula8/Exemplos.md) | &nbsp;|
 | [9](./Aula9/) | 16/04 | **Listas lineares** | Implementação de listas encadeadas. Nós encadeados e TAD lista.<br/>[Slides](https://docs.google.com/presentation/d/1nfhHIAeZBmixSH6zjuMGWELVCsxQI07ES-e2YZXBUd0/) | Atividade 4: Listas encadeadas<br/> [Enunciado](./Aula9/Atividade.md)|
-| [10](./Aula10/) | 23/04 | **Listas lineares** | Implementação de listas encadeadas<br/> | &nbsp;|
+| [10](./Aula10/) | 23/04 | **Listas lineares** | Implementação de listas encadeadas<br/>[Slides](https://docs.google.com/presentation/d/1rvW4b_Hdln4V7a4FDsAnSkmV5S0eVw-qXF3Qdj-ihQk/) | &nbsp;|
 
 ## Documentos
  - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
