@@ -22,19 +22,16 @@
 ### Programação em C
  - [Programação em C](http://fig.if.usp.br/~esdobay/c/c.pdf)
  - [Documentação da biblioteca padrão C](http://www.cplusplus.com/reference/clibrary/)
+ - [linguagemc.com.br](http://linguagemc.com.br/)
 
 ### Estruturas de Dados
  - [Notas de aula - Prof. Paulo Feofiloff](https://www.ime.usp.br/~pf/estruturas-de-dados/)
+ - [Algoritmos e Estruturas de Dados 1 - UFG - CC](http://www.inf.ufg.br/~hebert/disc/aed1/)
+ - [Estruturas de Dados - UFES 2018](https://inf.ufes.br/~pdcosta/ensino/2018-2-estruturas-de-dados/)
 
 ### Ferramentas
  - [Visualizador de execução](http://www.pythontutor.com/c.html#mode=edit)
  - [VisuAlgo](https://visualgo.net/)
- - [linguagemc.com.br](http://linguagemc.com.br/)
-
-
-### Slides de outros cursos
- - [Algoritmos e Estruturas de Dados 1 - UFG - CC](http://www.inf.ufg.br/~hebert/disc/aed1/)
- - [Estruturas de Dados - UFES 2018](https://inf.ufes.br/~pdcosta/ensino/2018-2-estruturas-de-dados/)
 
 ### Juízes online
  - [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt)
