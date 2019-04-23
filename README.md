@@ -12,6 +12,7 @@
 | [7](./Aula7/) | 09/04 | **Tipos abstratos de dados** | Implementação de um conjunto usando vetor. Modularização e testes.<br/>[Slides](https://docs.google.com/presentation/d/1rEjjMzBfdA4ZVMYRAmPx9C3XKHpJFgmG-mURtaU9O2E/) | Atividade 3: TAD<br/>[Enunciado](./Aula7/Atividade.md), [Solução](./Lista3/)|
 | [8](./Aula8/) | 12/04 | **Listas lineares** | Introdução: conceitos, encadeamento, operações, aplicações; variações de encadeamento: circular e duplo<br/>[Slides](https://docs.google.com/presentation/d/16ZbIht-k48Ajc9BVuXNGW73nedEnJZrCEVmgSn-oims/), [Exemplos usando encadeamento](./Aula8/Exemplos.md) | &nbsp;|
 | [9](./Aula9/) | 16/04 | **Listas lineares** | Implementação de listas encadeadas. Nós encadeados e TAD lista.<br/>[Slides](https://docs.google.com/presentation/d/1nfhHIAeZBmixSH6zjuMGWELVCsxQI07ES-e2YZXBUd0/) | Atividade 4: Listas encadeadas<br/> [Enunciado](./Aula9/Atividade.md)|
+| [10](./Aula10/) | 23/04 | **Listas lineares** | Implementação de listas encadeadas<br/> | &nbsp;|
 
 ## Documentos
  - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
@@ -22,10 +23,13 @@
  - [Programação em C](http://fig.if.usp.br/~esdobay/c/c.pdf)
  - [Documentação da biblioteca padrão C](http://www.cplusplus.com/reference/clibrary/)
 
+### Estruturas de Dados
+ - [Notas de aula - Prof. Paulo Feofiloff](https://www.ime.usp.br/~pf/estruturas-de-dados/)
 
 ### Ferramentas
  - [Visualizador de execução](http://www.pythontutor.com/c.html#mode=edit)
  - [VisuAlgo](https://visualgo.net/)
+ - [linguagemc.com.br](http://linguagemc.com.br/)
 
 
 ### Slides de outros cursos
@@ -45,4 +49,3 @@
 - P. Deitel, H. Deitel. C: Como Programar. Pearson Universidades, 2011.
 - M. Tenenbaum, Y. Langsam, M. J. Augenstein. Estruturas de Dados Usando C. Pearson Makron Books, 1995.
 - Markenzon, Lilian; Szwarcfiter, Jayme Luiz. Estruturas de Dados e seus Algoritmos. Rio de Janeiro: LTC, 2010.
--
