@@ -13,6 +13,7 @@
 | [8](./Aula8/) | 12/04 | **Listas lineares** | Introdução: conceitos, encadeamento, operações, aplicações; variações de encadeamento: circular e duplo<br/>[Slides](https://docs.google.com/presentation/d/16ZbIht-k48Ajc9BVuXNGW73nedEnJZrCEVmgSn-oims/), [Exemplos usando encadeamento](./Aula8/Exemplos.md) | &nbsp;|
 | [9](./Aula9/) | 16/04 | **Listas lineares** | Implementação de listas encadeadas. Nós encadeados e TAD lista.<br/>[Slides](https://docs.google.com/presentation/d/1nfhHIAeZBmixSH6zjuMGWELVCsxQI07ES-e2YZXBUd0/) | Atividade 4: Listas encadeadas<br/> [Enunciado](./Aula9/Atividade.md)|
 | [10](./Aula10/) | 23/04 | **Listas lineares** | Implementação de listas encadeadas<br/>[Slides](https://docs.google.com/presentation/d/1rvW4b_Hdln4V7a4FDsAnSkmV5S0eVw-qXF3Qdj-ihQk/) | &nbsp;|
+| [11](./Aula11/) | 26/04 | **Pilhas e Filas** | Conceitos, operações, implementação (vetor e encadeamento) e aplicações<br/>[Slides](https://docs.google.com/presentation/d/1fP8JwhozQAUZ3Z4MgSjCm6DDTQxSPqLqC--vJOfc6DA/) | &nbsp;|
 
 ## Documentos
  - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
@@ -22,6 +23,7 @@
 ### Programação em C
  - [Programação em C](http://fig.if.usp.br/~esdobay/c/c.pdf)
  - [Documentação da biblioteca padrão C](http://www.cplusplus.com/reference/clibrary/)
+ - [Recursos da Linguagem C](https://www.ime.usp.br/~pf/algoritmos/index.html#C-language)
  - [linguagemc.com.br](http://linguagemc.com.br/)
 
 ### Estruturas de Dados
