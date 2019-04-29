@@ -2,7 +2,7 @@
 
 
 |Aula|Data|Assunto|Conteúdo|Atividade|
-|:--:|----|----|--------|---------|
+|:--:|:--:|-------|--------|:--------|
 | [1](./Aula1/) | 19/03 | **Revisão de programação** | Apresentação do curso: objetivos, programa, avaliação; Revisão de algoritmos e programação: E/S, estrut. controle, ordenação, busca, manipulação de strings, etc<br/>[Slides](https://docs.google.com/presentation/d/1512S2YVKi4uvKyb707CTPTe75GNIxNfLzOJ0duFmHX4/), [Plano de Disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf) | Atividade 1: Revisão de algoritmos<br/> [Enunciado](./Aula1/Lista1.pdf), [Solução](./Lista1)|
 | [2](./Aula2/) | 22/03 | **Revisão de programação** | Revisão linguagem C: referências/ponteiros, passagem por valor/referência, vetores, classes/estruturas<br/>[Slides](https://docs.google.com/presentation/d/1Fp9ax2kFu3ngFwbXkXDi6wCVvn2WrT2ZYkXuuQdTeXQ/), [Exemplos Linguagem C](./Aula2/LinguagemC.md) | &nbsp;|
 | [3](./Aula3/) | 26/03 | **Revisão de programação** | Exercícios com strings, vetores e revisão da linguagem de programação<br/>[Slides](https://docs.google.com/presentation/d/1KnTs1kkZctaoxAlFg3fxlT8CrUv8FFTTn0YNDpQdPV0/) | &nbsp;|
@@ -14,6 +14,10 @@
 | [9](./Aula9/) | 16/04 | **Listas lineares** | Implementação de listas encadeadas. Nós encadeados e TAD lista.<br/>[Slides](https://docs.google.com/presentation/d/1nfhHIAeZBmixSH6zjuMGWELVCsxQI07ES-e2YZXBUd0/) | Atividade 4: Listas encadeadas<br/> [Enunciado](./Aula9/Atividade.md)|
 | [10](./Aula10/) | 23/04 | **Listas lineares** | Implementação de listas encadeadas<br/>[Slides](https://docs.google.com/presentation/d/1rvW4b_Hdln4V7a4FDsAnSkmV5S0eVw-qXF3Qdj-ihQk/) | &nbsp;|
 | [11](./Aula11/) | 26/04 | **Pilhas e Filas** | Conceitos, operações, implementação (vetor e encadeamento) e aplicações<br/>[Slides](https://docs.google.com/presentation/d/1fP8JwhozQAUZ3Z4MgSjCm6DDTQxSPqLqC--vJOfc6DA/) | &nbsp;|
+| [12](./Aula12/) | 30/04 | **Pilhas e Filas** | Aplicações de pilhas e filas<br/> | Atividade 5: Pilhas e filas<br/>[Enunciado](./Aula12/Atividade.md)|
+| [13](./Aula13/) | 03/05 | **Revisão e outros tópicos** | Revisão de tópicos em listas, pilhas e filas<br/> | &nbsp;|
+| [14](./Aula14/) | 10/05 | **Revisão e outros tópicos** | Revisão dos principais conceitos, esclarecimento de dúvidas, exercícios<br/> | &nbsp;|
+| [15](./Aula15/) | 14/05 | **Primeira avaliação** | <br/> | &nbsp;|
 
 ## Documentos
  - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
