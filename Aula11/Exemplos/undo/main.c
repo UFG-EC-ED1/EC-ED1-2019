@@ -34,10 +34,10 @@ limpa_redo_pilha() {
 #define INTERVALO_DIGITACAO (1000000 / 2)
 
 static gboolean
-deve_iniciar_operacao(EditorOperacao *op) {
+deve_iniciar_operacao() {
     gint64 now = g_get_real_time();
 
-    if (op == NULL)
+    if (operacao_corrente == NULL)
         return TRUE;
 
     if (now - operacao_corrente_modificada > INTERVALO_DIGITACAO)
@@ -70,7 +70,7 @@ text_inserted(GtkTextBuffer *buffer,
 
     gint64 now = g_get_real_time();
 
-    if (deve_iniciar_operacao(operacao_corrente)
+    if (deve_iniciar_operacao()
         || operacao_corrente->tipo != TEXTO_INSERIDO
         || inicio != operacao_corrente->fim) {
         if (operacao_corrente != NULL)
@@ -110,7 +110,7 @@ text_deleted(GtkTextBuffer *buffer,
 
     g_debug("TEXT_DELETED [%i, %i] = %s\n", inicio, fim, str);
 
-    if (deve_iniciar_operacao(operacao_corrente)
+    if (deve_iniciar_operacao()
         || operacao_corrente->tipo != TEXTO_REMOVIDO
         || inicio != operacao_corrente->inicio) {
         if (operacao_corrente != NULL)
