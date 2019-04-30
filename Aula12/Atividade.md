@@ -11,7 +11,7 @@ A+2
 (A+B)*(2-C)
 ```
 
-As mesma expressões acima podem ser representadas na forma *prefixa*. Neste caso o operador precede os operandos:
+As mesma expressões acima podem ser representadas na forma **prefixa**. Neste caso o operador precede os operandos:
 ```
 A
 +A2
@@ -87,7 +87,7 @@ Exemplo de execução do algoritmo em uma expressão.
 ```
 (A+B)*(2-C)
 ```
-| Símbolo | Pilha | Saída |
+| Entrada | Pilha | Saída |
 |:-------:|-------|------|
 | (       | (     | |
 | A       | (     | A
@@ -107,10 +107,12 @@ Exemplo de execução do algoritmo em uma expressão.
 ## Exercício 1
 
 Implemente uma função em C que receba uma cadeia de caracteres com uma expressão na forma infixa e retorne uma nova cadeia de caracteres na forma posfixa. A função deve ter o seguinte protótipo.
-
 ```C
 char *infixa_para_posfixa(const char *infixa);
 ```
+
+> Para simplificar o tratamento das expressões vamos considerar que tanto os operadores quanto os dígitos são representados por apenas um caracter. Assim sendo os operandos permitidos são apenas variáveis de uma letra ou números de um dígito.
+
 
 > Você pode utilizar a implementação de pilha apresentada na [Aula 11](../Aula11/Exemplos/ed1_pilha/), basta incluir os arquivos ``pilha_encadeada.h`` e ``pilha_encadeada.c`` no seu projeto. Alternativamente você pode manipular uma pilha diretamente em um vetor, usando um vetor de tamanho fixo e uma variável para representar o topo.
 
@@ -149,7 +151,7 @@ avalia_expressao_posfixa(posfixa) {
 ```
 
 
-| Símbolo | Pilha |
+| Entrada | Pilha |
 |:-------:|-------|
 | 2 | 2
 | 5 | 2 5
@@ -164,5 +166,10 @@ avalia_expressao_posfixa(posfixa) {
 | * | 7
 
 
+Considerando os dados acima, implemente uma função que avalia uma expressão contendo apenas números inteiros e operadores.
 
-Considerando os dados acima, implemente uma função que avalia uma expressão
+```C
+int avalia(const char *expr);
+```
+
+> Considere que os números inteiros possuem apenas um dígito.
