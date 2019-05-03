@@ -14,7 +14,7 @@
 | [9](./Aula9/) | 16/04 | **Listas lineares** | Implementação de listas encadeadas. Nós encadeados e TAD lista.<br/>[Slides](https://docs.google.com/presentation/d/1nfhHIAeZBmixSH6zjuMGWELVCsxQI07ES-e2YZXBUd0/) | Atividade 4: Listas encadeadas<br/> [Enunciado](./Aula9/Atividade.md)|
 | [10](./Aula10/) | 23/04 | **Listas lineares** | Implementação de listas encadeadas<br/>[Slides](https://docs.google.com/presentation/d/1rvW4b_Hdln4V7a4FDsAnSkmV5S0eVw-qXF3Qdj-ihQk/) | &nbsp;|
 | [11](./Aula11/) | 26/04 | **Pilhas e Filas** | Conceitos, operações, implementação (vetor e encadeamento) e aplicações<br/>[Slides](https://docs.google.com/presentation/d/1fP8JwhozQAUZ3Z4MgSjCm6DDTQxSPqLqC--vJOfc6DA/), [Exemplos e implementação](./Aula11/Exemplos/) | &nbsp;|
-| [12](./Aula12/) | 30/04 | **Pilhas e Filas** | Aplicações de pilhas e filas<br/> | Atividade 5: Pilhas e filas<br/>[Enunciado](./Aula12/Atividade.md)|
+| [12](./Aula12/) | 30/04 | **Pilhas e Filas** | Aplicações de pilhas e filas<br/>[Slides](https://docs.google.com/presentation/d/1_VAqveE3S-IsPxbZTIZOZrE4Y0FJLMTBeIdBVHab5kM/edit?usp=sharing) | Atividade 5: Pilhas e filas<br/>[Enunciado](./Aula12/Atividade.md)|
 | [13](./Aula13/) | 03/05 | **Revisão e outros tópicos** | Revisão de tópicos em listas, pilhas e filas<br/> | &nbsp;|
 | [14](./Aula14/) | 10/05 | **Revisão e outros tópicos** | Revisão dos principais conceitos, esclarecimento de dúvidas, exercícios<br/> | &nbsp;|
 | [15](./Aula15/) | 14/05 | **Primeira avaliação** | <br/> | &nbsp;|
