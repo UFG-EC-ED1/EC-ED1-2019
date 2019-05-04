@@ -7,7 +7,7 @@ lista_obtem(lista_t *lista, int posicao) {
     assert(posicao < lista_tamanho(lista));
 
     lista_no_t *no = lista->cabeca;
-    while (posicao-- > 0)
+    for (int i = 0; i < posicao; i++)
         no = no->proximo;
 
     return no->item;
@@ -35,7 +35,7 @@ lista_remove(lista_t *lista, size_t posicao) {
         return lista_remove_inicio(lista);
 
     lista_no_t *anterior = lista->cabeca;
-    while (--posicao > 0)
+    for (int i = 1; i < posicao; i++)
         anterior = anterior->proximo;
 
     lista_no_t *temp = anterior->proximo;
@@ -58,8 +58,32 @@ lista_nova(void) {
     return lista;
 }
 
-void
-lista_adiciona(lista_t *lista, int item);
+static lista_no_t *
+lista_no_novo(int item, lista_no_t *proximo) {
+    lista_no_t *no = malloc(sizeof(lista_no_t));
+    no->item = item;
+    no->proximo = proximo;
+    return no;
+}
 
 void
-lista_libera(lista_t *lista);
+lista_adiciona(lista_t *lista, int item) {
+    if (lista->cabeca == NULL || item < lista->cabeca->item) {
+        lista->cabeca = lista_no_novo(item, lista->cabeca);
+    } else {
+        lista_no_t *anterior = lista->cabeca;
+        while (anterior->proximo != NULL && item > anterior->proximo->item)
+            anterior = anterior->proximo;
+
+        anterior->proximo = lista_no_novo(item, anterior->proximo);
+    }
+
+    lista->tamanho++;
+}
+
+void
+lista_libera(lista_t *lista) {
+    while (!lista_vazia(lista))
+        lista_remove_inicio(lista);
+    free(lista);
+}

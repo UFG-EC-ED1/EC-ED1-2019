@@ -28,5 +28,7 @@ int main() {
 
     lista_libera(lista);
 
+    puts("[OK] Todos os testes");
+
     return 0;
 }
