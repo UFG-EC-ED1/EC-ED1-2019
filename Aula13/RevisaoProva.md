@@ -1,16 +1,16 @@
 ## TADs
 ```C
 // Lista
-void lista_adiciona(lista_t *lista, size_t posicao, void *item)
-void lista_adiciona_fim(lista_t *lista, void *item)
+void lista_adiciona(lista_t *lista, size_t posicao, void *item);
+void lista_adiciona_fim(lista_t *lista, void *item);
 void *lista_obtem(lista_ t *lista, size_t posicao);
 size_t lista_tamanho(lista_t *lista);
 
 // Conjunto
-void conjunto_adiciona(conjunto_t *conjunto, void *elemento)
-bool conjunto_contem(conjunto_t *conjunto, void *elemento)
-void *conjunto_remove(conjunto_t *conjunto, void *elemento)
-size_t conjunto_tamanho(conjunto_t *conjunto);)
+void conjunto_adiciona(conjunto_t *conjunto, void *elemento);
+bool conjunto_contem(conjunto_t *conjunto, void *elemento);
+void *conjunto_remove(conjunto_t *conjunto, void *elemento);
+size_t conjunto_tamanho(conjunto_t *conjunto);
 
 // Dicionario
 void dicionario_define(dicionario_t *dicionario, void *chave, void *valor);
