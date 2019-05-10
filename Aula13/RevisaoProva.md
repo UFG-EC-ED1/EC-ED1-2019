@@ -29,9 +29,13 @@ void *pilha_desempilha(pilha_t *pilha);
 bool pilha_vazia(pilha_t *pilha);
 ```
 
-Para cada problema abaixo indique qual o tipo de dados pode ser utilizado para auxiliar sua solução.
+Para cada problema abaixo indique qual o tipo de dados pode ser utilizado para auxiliar sua solução e explique com suas palavras a ideia da solução.
 
-1. Dado um artigo, encontrar as 10 palavras mais utilizadas.
+1. Dado um artigo (uma lista de palavras), encontrar as 10 palavras mais utilizadas.
+
+2. Dado um vetor *v* e um número *k* verificar se existem dois números em *v* cuja soma é *k*.
+
+3. Implementar as funções desfazer e refazer em um editor de texto.
 
 
 ## Nós encadeados
@@ -153,13 +157,13 @@ NoInt *no_int_remove(NoInt *cabeca, int item) {
 
 	NoInt *no = cabeca;
 	while (no != NULL) {
-	  if (no->item == item) {
-	    NoInt *aux = no;
-	    no->proximo = aux->proximo
-	    free(aux);
-        break;
-	  }
-	  no = no->prox;
+		if (no->item == item) {
+			NoInt *aux = no;
+			no->proximo = aux->proximo
+			free(aux);
+			break;
+		}
+		no = no->prox;
 	}
 	return cabeca;
 }
