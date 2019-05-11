@@ -105,7 +105,7 @@ ListaNo *concatena(ListaNo *a, ListaNo *b) {
 ```
 > A função não deve alocar novos nós, a concatenação deve ser feita utilizando os nós já alocados.
 ---
-**[Merge]** Escreva uma função que recebe duas listas ordenadas e retorne uma nova lista contendo os itens das duas listas também ordenados. Por exemplo, dadas as listas  ``[1, 3, 5, 10]`` e ``[1, 2, 4, 12]`` a função deve retornar uma lista contendo os itens em ordem ``[1, 2, 3, 4, 5, 10, 12]``
+**[Merge]** Escreva uma função que recebe duas listas ordenadas e retorne uma nova lista contendo os itens das duas listas também ordenados. Por exemplo, dadas as listas  ``[1, 3, 5, 10]`` e ``[1, 2, 4, 12]`` a função deve retornar uma lista contendo os itens em ordem ``[1, 1, 2, 3, 4, 5, 10, 12]``
 ```C
 ListaNo *merge(ListaNo *a, ListaNo *b);
 ```
