@@ -140,7 +140,7 @@ struct lista_no {
  NoInt *no_int_obtem(NoInt *cabeca, int posicao) {
     NoInt *no = cabeca;
     while (no != NULL) {
-        if (no->item == item)
+        if (no->item == posicao)
             return no;
         else
             no = no->prox;
