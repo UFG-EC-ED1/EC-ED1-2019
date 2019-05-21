@@ -14,7 +14,7 @@
 
 
 
-  >Nos exercícios acima considere uma estrutura de nó em árvore binária dada abaixo.
+  >Nos exercícios acima considere a estrutura de nó em árvore binária dada abaixo.
   ```C
   typedef struct tree_node TreeNode;
   struct tree_node {
