@@ -27,7 +27,6 @@
 | [22](./Aula22/) | 11/06 | **Árvores** | <br/> | &nbsp;|
 | [23](./Aula23/) | 14/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
 | [24](./Aula24/) | 18/06 | **Introdução à grafos** | <br/> | &nbsp;|
-
 | [25](./Aula25/) | 25/06 | **Introdução à grafos** | <br/> | &nbsp;|
 | [26](./Aula26/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
 | [27](./Aula27/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
