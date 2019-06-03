@@ -3,6 +3,7 @@
 
 |Aula|Data|Assunto|Conteúdo|Atividade|
 |:--:|:--:|-------|--------|:--------|
+| [0](./Aula0/) | 15/03 | **Apresentação do curso** | Não houve<br/> | &nbsp;|
 | [1](./Aula1/) | 19/03 | **Revisão de programação** | Apresentação do curso: objetivos, programa, avaliação; Revisão de algoritmos e programação: E/S, estrut. controle, ordenação, busca, manipulação de strings, etc<br/>[Slides](https://docs.google.com/presentation/d/1512S2YVKi4uvKyb707CTPTe75GNIxNfLzOJ0duFmHX4/), [Plano de Disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf) | Atividade 1: Revisão de algoritmos<br/> [Enunciado](./Aula1/Lista1.pdf), [Solução](./Lista1)|
 | [2](./Aula2/) | 22/03 | **Revisão de programação** | Revisão linguagem C: referências/ponteiros, passagem por valor/referência, vetores, classes/estruturas<br/>[Slides](https://docs.google.com/presentation/d/1Fp9ax2kFu3ngFwbXkXDi6wCVvn2WrT2ZYkXuuQdTeXQ/), [Exemplos Linguagem C](./Aula2/LinguagemC.md) | &nbsp;|
 | [3](./Aula3/) | 26/03 | **Revisão de programação** | Exercícios com strings, vetores e revisão da linguagem de programação<br/>[Slides](https://docs.google.com/presentation/d/1KnTs1kkZctaoxAlFg3fxlT8CrUv8FFTTn0YNDpQdPV0/) | &nbsp;|
@@ -20,8 +21,8 @@
 | [15](./Aula15/) | 14/05 | **Primeira avaliação** | Prova escrita - Sala 204 - Alocação dinâmica, tipos abstratos de dados, listas lineares, pilhas e filas<br/>[Questões](./Aula15/Prova1.pdf), [Respostas](./Aula15/Prova1Resposta.pdf) | &nbsp;|
 | [16](./Aula16/) | 17/05 | **Árvores** | Conceitos, representação e operações<br/>[Slides](https://docs.google.com/presentation/d/1sjZJx7RWJkO7XfRRiQvOOqpYz17tJSZ2BQ-w3ZKO0eo/) | &nbsp;|
 | [17](./Aula17/) | 21/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | Atividade 6: Árvores binárias de busca, [Enunciado](./Aula17/Atividade.md)|
-| [18](./Aula18/) | 28/05 | **Árvores** | <br/> | &nbsp;|
-| [19](./Aula19/) | 31/05 | **Árvores** | <br/> | &nbsp;|
+| [18](./Aula18/) | 28/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | &nbsp;|
+| [19](./Aula19/) | 31/05 | **Árvores** | Percursos em árvores binárias<br/>[Slides](https://docs.google.com/presentation/d/1wEocZ63UbY53RN4gVzEbG_M0gQpW81tQgD_tkdyj6Gc/) | &nbsp;|
 | [20](./Aula20/) | 04/06 | **Árvores** | <br/> | &nbsp;|
 | [21](./Aula21/) | 07/06 | **Árvores** | <br/> | &nbsp;|
 | [22](./Aula22/) | 11/06 | **Árvores** | <br/> | &nbsp;|
