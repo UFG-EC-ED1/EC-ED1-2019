@@ -31,6 +31,7 @@ fila_adiciona(Fila *fila, void *data) {
 
     if (fila->cauda == NULL) {
         fila->cauda = novo;
+        novo->prox = novo;
     }
 
     fila->cauda->prox = novo;

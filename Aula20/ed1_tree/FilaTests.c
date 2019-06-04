@@ -19,6 +19,22 @@ main(void) {
     for (int i = 0; i < 10; i++)
         assert((void *) i == fila_remove(f));
 
+
+    for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
+            fila_adiciona(f, i);
+            fila_adiciona(f, i + 1);
+            fila_remove(f);
+        }
+
+        for (int i = 0; i < 3; i++) {
+            fila_adiciona(f, i);
+            fila_remove(f);
+        }
+
+    }
+
+
     fila_libera(f);
 
 }
