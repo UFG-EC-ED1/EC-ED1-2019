@@ -76,7 +76,7 @@ fila_remove(Fila *fila) {
     if (fila->tam == 1)
         fila->cauda = NULL;
     else
-        fila->cauda->prox = fila->cauda->prox->prox;
+        fila->cauda->prox = cabeca->prox;
 
     fila->tam--;
 
@@ -154,36 +154,23 @@ ab_insere_no(NoArvBin *raiz, NoArvBin *no) {
 
 bool
 ab_eh_de_busca(NoArvBin *raiz) {
-    if (raiz == NULL)
-        return true;
 
-    if (raiz->esq && raiz->chave <= raiz->esq->chave)
-        return false;
-
-    if (raiz->dir && raiz->chave > raiz->dir->chave)
-        return false;
-
-    return ab_eh_de_busca(raiz->esq) && ab_eh_de_busca(raiz->dir);
 }
 
 int
 main(void) {
-//    NoArvBin *raiz = NULL;
-//    for (int i = 1; i < 9; i++)
-//        raiz = ab_insere_no(raiz, ab_no_novo(i));
+    NoArvBin *raiz = NULL;
+    for (int i = 1; i < 9; i++)
+        raiz = ab_insere_no(raiz, ab_no_novo(i));
+
+    assert(!ab_eh_de_busca(raiz));
+
+
+//    int seq[] = {10, 5, 15, 3, 7, 12, 17};
+//    NoArvBin *raizB = NULL;
+//    for (int i = 0; i < 7; i++)
+//        raizB = ab_insere_no(raizB, ab_no_novo(seq[i]));
 //
-//    assert(!ab_eh_de_busca(raiz));
-
-
-    int seq[] = {10, 5, 15, 3, 7, 12, 17};
-    NoArvBin *raizB = NULL;
-    for (int i = 0; i < 7; i++)
-        raizB = ab_insere_no(raizB, ab_no_novo(seq[i]));
-
-    assert(ab_eh_de_busca(raizB));
-
-
-    // converter em uma cadeia de caracteres,
-    // deve imprimir (1(2(4)(5(7)(8)))(3(6(9)))
+//    assert(ab_eh_de_busca(raizB));
 
 }

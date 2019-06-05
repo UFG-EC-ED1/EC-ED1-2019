@@ -25,17 +25,19 @@ fila_init(Fila *fila) {
 
 bool
 fila_adiciona(Fila *fila, void *data) {
-    No *novo = no_novo(data, fila_cabeca(fila));
+    No *novo = no_novo(data, NULL);
     if (novo == NULL)
         return false;
 
     if (fila->cauda == NULL) {
+        assert(fila->tam == 0);
         fila->cauda = novo;
         novo->prox = novo;
+    } else {
+        novo->prox = fila->cauda->prox;
+        fila->cauda = novo;
     }
 
-    fila->cauda->prox = novo;
-    fila->cauda = novo;
     fila->tam++;
 
     return true;
@@ -48,7 +50,7 @@ fila_remove(Fila *fila) {
     if (fila->tam == 1)
         fila->cauda = NULL;
     else
-        fila->cauda = fila->cauda->prox;
+        fila->cauda = cabeca->prox;
 
     fila->tam--;
 

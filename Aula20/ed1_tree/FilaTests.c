@@ -28,7 +28,6 @@ main(void) {
         }
 
         for (int i = 0; i < 3; i++) {
-            fila_adiciona(f, i);
             fila_remove(f);
         }
 
