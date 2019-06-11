@@ -20,14 +20,14 @@
 | [14](./Aula14/) | 10/05 | **Revisão e outros tópicos** | Revisão dos principais conceitos, esclarecimento de dúvidas, exercícios<br/>[Slides](https://docs.google.com/presentation/d/12hQp6y0urOZrh0QP9VQqgiAjOz8RzxdJ71NGhpjO-zo/), [Exercícios de revisão](./Aula13/RevisaoProva.md) | &nbsp;|
 | [15](./Aula15/) | 14/05 | **Primeira avaliação** | Prova escrita - Sala 204 - Alocação dinâmica, tipos abstratos de dados, listas lineares, pilhas e filas<br/>[Questões](./Aula15/Prova1.pdf), [Respostas](./Aula15/Prova1Resposta.pdf) | &nbsp;|
 | [16](./Aula16/) | 17/05 | **Árvores** | Conceitos, representação e operações<br/>[Slides](https://docs.google.com/presentation/d/1sjZJx7RWJkO7XfRRiQvOOqpYz17tJSZ2BQ-w3ZKO0eo/) | &nbsp;|
-| [17](./Aula17/) | 21/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | Atividade 6: Árvores binárias de busca, [Enunciado](./Aula17/Atividade.md)|
+| [17](./Aula17/) | 21/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | Atividade 6: Árvores binárias de busca<br/> [Enunciado](./Aula17/Atividade.md)|
 | [18](./Aula18/) | 28/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | &nbsp;|
 | [19](./Aula19/) | 31/05 | **Árvores** | Percursos em árvores binárias<br/>[Slides](https://docs.google.com/presentation/d/1wEocZ63UbY53RN4gVzEbG_M0gQpW81tQgD_tkdyj6Gc/) | &nbsp;|
-| [20](./Aula20/) | 04/06 | **Árvores** | <br/> | &nbsp;|
-| [21](./Aula21/) | 07/06 | **Árvores** | <br/> | &nbsp;|
+| [20](./Aula20/) | 04/06 | **Árvores** | Percursos em árvores binárias<br/> | Atividade 7: Percursos em árvores binárias<br/> [Enunciado](./Aula20/Atividade.md)|
+| [21](./Aula21/) | 07/06 | **Árvores** | Árvore n-árias, percursos com costura<br/>[Slides](https://docs.google.com/presentation/d/1ZSkoUaJLSN6gQpJ6gDX7FtaNvcWaNqJa7ax_166NSbw/) | &nbsp;|
 | [22](./Aula22/) | 11/06 | **Árvores** | <br/> | &nbsp;|
 | [23](./Aula23/) | 14/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
-| [24](./Aula24/) | 18/06 | **Introdução à grafos** | <br/> | &nbsp;|
+| [24](./Aula24/) | 18/06 | **Introdução à grafos** | Prova 2<sup>a</sup> chamada<br/> | &nbsp;|
 | [25](./Aula25/) | 25/06 | **Introdução à grafos** | <br/> | &nbsp;|
 | [26](./Aula26/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
 | [27](./Aula27/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
@@ -35,7 +35,6 @@
 | [29](./Aula29/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
 | [30](./Aula30/) | 12/07 | **Segunda avaliação** | <br/> | &nbsp;|
 | [31](./Aula31/) | 16/07 | **Entrega de notas** | <br/> | &nbsp;|
-
 
 
 ## Documentos
@@ -53,6 +52,7 @@
  - [Notas de aula - Prof. Paulo Feofiloff](https://www.ime.usp.br/~pf/estruturas-de-dados/)
  - [Algoritmos e Estruturas de Dados 1 - UFG - CC](http://www.inf.ufg.br/~hebert/disc/aed1/)
  - [Estruturas de Dados - UFES 2018](https://inf.ufes.br/~pdcosta/ensino/2018-2-estruturas-de-dados/)
+ - [GeeksforGeeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
 
 ### Ferramentas
  - [Visualizador de execução](http://www.pythontutor.com/c.html#mode=edit)
