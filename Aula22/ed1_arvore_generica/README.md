@@ -5,8 +5,10 @@ Nesta atividade, utilizaremos um pequeno exemplo inspirado em aplicações de ge
 a manipulação de árvores genéricas para processamento de dados organizados de forma de forma hierárquica.
 
 Em ferramentas de gestão de contas e despesas é comum que estas contas estejam organizadas em uma hierarquia. Por exemplo,
-na aplicação (Gnucash)[https://www.gnucash.org/] as contas (Despesas, Receitas, Ativos) são apresentadas em uma árvore
+na aplicação [Gnucash](https://www.gnucash.org/) as contas (Despesas, Receitas, Ativos) são apresentadas em uma árvore
 que podem ser subdividas de acordo com o desejo do usuário.
+
+<img src="https://www.gnucash.org/docs/v3/C/gnucash-help/figures/Main-window-callouts.png"/>
 
 Nesta atividade tentaremos carregar informações de contas obtidas de um banco de dados e carregá-las em uma árvore para
 apresentá-las ao usuário e realizar outras operações.
