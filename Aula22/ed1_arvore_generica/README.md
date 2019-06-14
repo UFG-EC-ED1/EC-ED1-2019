@@ -1,17 +1,22 @@
 # Atividade 8
 
 
-Nesta atividade, utilizaremos um pequeno exemplo inspirado em aplicações de gestão de contas e despesas para praticar
-a manipulação de árvores genéricas para processamento de dados organizados de forma de forma hierárquica.
+Nesta atividade utilizaremos um pequeno exemplo inspirado em aplicações de gestão de contas e despesas para praticar
+a manipulação de árvores genéricas voltada para o processamento de dados organizados hierarquicamente.
 
 Em ferramentas de gestão de contas e despesas é comum que estas contas estejam organizadas em uma hierarquia. Por exemplo,
-na aplicação [Gnucash](https://www.gnucash.org/) as contas (Despesas, Receitas, Ativos) são apresentadas em uma árvore
-que podem ser subdividas de acordo com o desejo do usuário.
+na aplicação [Gnucash](https://www.gnucash.org/) as contas (Despesas, Receitas, Ativos) são apresentadas em uma árvore, onde cada conta pode ser subdivida em contas mais especializadas de acordo com o usuário. Por exemplo, a conta Despesas pode ser subdivida em Automóvel, Lazer, Casa Refeições fora etc.
+Neste modelo, transações são registradas como transferências entre contas.
 
-<img width="50%" src="https://www.gnucash.org/docs/v3/C/gnucash-help/figures/Main-window-callouts.png"/>
+<center>
+<img width="65%" src="https://www.gnucash.org/docs/v3/C/gnucash-help/figures/Main-window-callouts.png"/>
+</center>
 
-Nesta atividade tentaremos carregar informações de contas obtidas de um banco de dados e carregá-las em uma árvore para
-apresentá-las ao usuário e realizar outras operações.
+Os dados de contas e transações são geralmente armazenados em um arquivo ou banco de dados e carregados pela aplicação durante sua inicialização.
+Uma árvore genérica pode ser utilizada para representar a estrutura de contas em memória e facilitar a manipulação e visualização dos dados.
+
+
+Nesta atividade trabalharemos com uma estrutura de contas que são criadas por padrão pela aplicação [Gnucash](https://www.gnucash.org/). O objetivo é carregar a estrutura de contas a partir de um arquivo para possibilitar a apresentação da estrutura de árvore ao usuário e realização de outras operações.
 
 Os dados estão disponíveis no arquivo `contas.txt`. Este é uma arquivo CSV separado por ponto e vírgula, contendo quatro campos:
 O nome da conta, o identificador da conta, o identificador do pai e o saldo da conta. Por exemplo, no trecho abaixo do arquivo
@@ -38,9 +43,14 @@ fazer isso na função `carrega_contas()`, que recebe um ponteiro para um arquiv
 da árvore.
 
 O código já inclui funções para processar cada linha do arquivo e obter uma estrutura do tipo `Conta` contendo os campos
-`nome`, `id`, `id_pai` e `saldo`.
+`nome`, `id`, `id_pai` e `saldo`. O primeiro campo contém o nome da conta, o segundo campo um identificador único (chave) correspondente à essa conta,
+o terceiro campo contém o identificador da conta pai, e o último campo contém o saldo da conta. A conta raiz `Root Account` não possui pai.
+À partir dos campos `id` e `id_pai` é possível construir a árvore.
 
-Também está disponível uma função para imprimir de forma a hierarquia da árvore carregada da seguinte forma.
+As contas estão listadas no arquivo em pré-ordem, de forma que cada conta aparece no arquivo apenas após sua conta pai.
+
+
+Também está disponível uma função `imprime_arvore()` para imprimir a hierarquia da árvore carregada da seguinte forma.
 
 ```
 \--Root Account                                        -0.54
