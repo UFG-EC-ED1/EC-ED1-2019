@@ -18,7 +18,7 @@
 | [12](./Aula12/) | 30/04 | **Pilhas e Filas** | Aplicações de pilhas e filas<br/>[Slides](https://docs.google.com/presentation/d/1_VAqveE3S-IsPxbZTIZOZrE4Y0FJLMTBeIdBVHab5kM/edit?usp=sharing) | Atividade 5: Pilhas e filas<br/>[Enunciado](./Aula12/Atividade.md)|
 | [13](./Aula13/) | 03/05 | **Revisão e outros tópicos** | Revisão de tópicos em listas, pilhas e filas<br/>[Slides](https://docs.google.com/presentation/d/13bVI_7BkDN8e4LQs9Wm0dBsIAzvh9KgSTy_GISQpOGQ/), [Exemplos](./Aula13/ed1_generico/) | &nbsp;|
 | [14](./Aula14/) | 10/05 | **Revisão e outros tópicos** | Revisão dos principais conceitos, esclarecimento de dúvidas, exercícios<br/>[Slides](https://docs.google.com/presentation/d/12hQp6y0urOZrh0QP9VQqgiAjOz8RzxdJ71NGhpjO-zo/), [Exercícios de revisão](./Aula13/RevisaoProva.md) | &nbsp;|
-| [15](./Aula15/) | 14/05 | **Primeira avaliação** | Prova escrita - Sala 204 - Alocação dinâmica, tipos abstratos de dados, listas lineares, pilhas e filas<br/>[Questões](./Aula15/Prova1.pdf), [Respostas](./Aula15/Prova1Resposta.pdf) | &nbsp;|
+| [15](./Aula15/) | 14/05 | **Avaliação** | Prova escrita - Sala 204 - Alocação dinâmica, tipos abstratos de dados, listas lineares, pilhas e filas<br/>[Questões](./Aula15/Prova1.pdf), [Respostas](./Aula15/Prova1Resposta.pdf) | &nbsp;|
 | [16](./Aula16/) | 17/05 | **Árvores** | Conceitos, representação e operações<br/>[Slides](https://docs.google.com/presentation/d/1sjZJx7RWJkO7XfRRiQvOOqpYz17tJSZ2BQ-w3ZKO0eo/) | &nbsp;|
 | [17](./Aula17/) | 21/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | Atividade 6: Árvores binárias de busca<br/> [Enunciado](./Aula17/Atividade.md)|
 | [18](./Aula18/) | 28/05 | **Árvores** | Árvores binárias de busca: operações básicas<br/> | &nbsp;|
@@ -26,16 +26,14 @@
 | [20](./Aula20/) | 04/06 | **Árvores** | Percursos em árvores binárias<br/> | Atividade 7: Percursos em árvores binárias<br/> [Enunciado](./Aula20/Atividade.md)|
 | [21](./Aula21/) | 07/06 | **Árvores** | Árvore n-árias, percursos com costura<br/>[Slides](https://docs.google.com/presentation/d/1ZSkoUaJLSN6gQpJ6gDX7FtaNvcWaNqJa7ax_166NSbw/) | &nbsp;|
 | [22](./Aula22/) | 11/06 | **Árvores** | Árvore n-árias<br/> | Atividade 8: Árvores genéricas [Enunciado](./Aula22/ed1_arvore_generica/)|
-| [23](./Aula23/) | 14/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
-| [24](./Aula24/) | 18/06 | **Introdução à grafos** | Prova 2<sup>a</sup> chamada<br/> | &nbsp;|
-| [25](./Aula25/) | 25/06 | **Introdução à grafos** | <br/> | &nbsp;|
-| [26](./Aula26/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
-| [27](./Aula27/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
-| [28](./Aula28/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
-| [29](./Aula29/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
-| [30](./Aula30/) | 12/07 | **Segunda avaliação** | <br/> | &nbsp;|
-| [31](./Aula31/) | 16/07 | **Entrega de notas** | <br/> | &nbsp;|
-
+| [23](./Aula23/) | 18/06 | **Avaliação** | Prova 2a chamada<br/> | &nbsp;|
+| [24](./Aula24/) | 25/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
+| [25](./Aula25/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
+| [26](./Aula26/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
+| [27](./Aula27/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
+| [28](./Aula28/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
+| [29](./Aula29/) | 12/07 | **Avaliação** | <br/> | &nbsp;|
+| [30](./Aula30/) | 16/07 | **Entrega de notas** | <br/> | &nbsp;|
 
 ## Documentos
  - [Plano de disciplina](./Aula1/1553028109770-PLA-1001193-Gustavo%20Cipriano%20Mota%20Sousa.pdf)
