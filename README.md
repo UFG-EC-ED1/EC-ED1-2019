@@ -26,7 +26,7 @@
 | [20](./Aula20/) | 04/06 | **Árvores** | Percursos em árvores binárias<br/> | Atividade 7: Percursos em árvores binárias<br/> [Enunciado](./Aula20/Atividade.md)|
 | [21](./Aula21/) | 07/06 | **Árvores** | Árvore n-árias, percursos com costura<br/>[Slides](https://docs.google.com/presentation/d/1ZSkoUaJLSN6gQpJ6gDX7FtaNvcWaNqJa7ax_166NSbw/) | &nbsp;|
 | [22](./Aula22/) | 11/06 | **Árvores** | Árvore n-árias<br/> | Atividade 8: Árvores genéricas [Enunciado](./Aula22/ed1_arvore_generica/)|
-| [23](./Aula23/) | 18/06 | **Avaliação** | Prova 2a chamada<br/> | &nbsp;|
+| [23](./Aula23/) | 18/06 | **Avaliação** | Prova 2<sub>a</sub> chamada - Sala 204<br/> | &nbsp;|
 | [24](./Aula24/) | 25/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
 | [25](./Aula25/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
 | [26](./Aula26/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
