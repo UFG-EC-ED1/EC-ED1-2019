@@ -26,15 +26,14 @@
 | [20](./Aula20/) | 04/06 | **Árvores** | Percursos em árvores binárias<br/> | Atividade 7: Percursos em árvores binárias<br/> [Enunciado](./Aula20/Atividade.md)|
 | [21](./Aula21/) | 07/06 | **Árvores** | Árvore n-árias, percursos com costura<br/>[Slides](https://docs.google.com/presentation/d/1ZSkoUaJLSN6gQpJ6gDX7FtaNvcWaNqJa7ax_166NSbw/) | &nbsp;|
 | [22](./Aula22/) | 11/06 | **Árvores** | Árvore n-árias<br/> | Atividade 8: Árvores genéricas [Enunciado](./Aula22/ed1_arvore_generica/)|
-| [23](./Aula23/) | 14/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
-| [24](./Aula24/) | 18/06 | **Introdução à grafos** | Prova 2<sup>a</sup> chamada<br/> | &nbsp;|
-| [25](./Aula25/) | 25/06 | **Introdução à grafos** | <br/> | &nbsp;|
-| [26](./Aula26/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
-| [27](./Aula27/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
-| [28](./Aula28/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
-| [29](./Aula29/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
-| [30](./Aula30/) | 12/07 | **Segunda avaliação** | <br/> | &nbsp;|
-| [31](./Aula31/) | 16/07 | **Entrega de notas** | <br/> | &nbsp;|
+| [23](./Aula23/) | 18/06 | **Avaliação** | Prova 2<sup>a</sup> chamada - Sala 204<br/> | [Enunciado](./Aula23/Prova1-2ndChamada.pdf), [Solução](./Aula23/Prova1-2ndChamada-solucao.pdf)|
+| [24](./Aula24/) | 25/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/> | &nbsp;|
+| [25](./Aula25/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
+| [26](./Aula26/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
+| [27](./Aula27/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
+| [28](./Aula28/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
+| [29](./Aula29/) | 12/07 | **Avaliação** | <br/> | &nbsp;|
+| [30](./Aula30/) | 16/07 | **Entrega de notas** | <br/> | &nbsp;|
 
 
 ## Documentos
