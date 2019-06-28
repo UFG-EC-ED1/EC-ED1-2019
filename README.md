@@ -52,6 +52,7 @@
  - [Algoritmos e Estruturas de Dados 1 - UFG - CC](http://www.inf.ufg.br/~hebert/disc/aed1/)
  - [Estruturas de Dados - UFES 2018](https://inf.ufes.br/~pdcosta/ensino/2018-2-estruturas-de-dados/)
  - [GeeksforGeeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
+ - [HackerEarth - Grafos](https://www.hackerearth.com/fr/practice/algorithms/graphs/)
 
 ### Ferramentas
  - [Visualizador de execução](http://www.pythontutor.com/c.html#mode=edit)
