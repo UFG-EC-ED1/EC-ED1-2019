@@ -27,8 +27,8 @@
 | [21](./Aula21/) | 07/06 | **Árvores** | Árvore n-árias, percursos com costura<br/>[Slides](https://docs.google.com/presentation/d/1ZSkoUaJLSN6gQpJ6gDX7FtaNvcWaNqJa7ax_166NSbw/) | &nbsp;|
 | [22](./Aula22/) | 11/06 | **Árvores** | Árvore n-árias<br/> | Atividade 8: Árvores genéricas [Enunciado](./Aula22/ed1_arvore_generica/)|
 | [23](./Aula23/) | 18/06 | **Avaliação** | Prova 2<sup>a</sup> chamada - Sala 204<br/>[Questões](./Aula23/Prova1-2ndChamada.pdf), [Respostas](./Aula23/Prova1-2ndChamada-solucao.pdf) | &nbsp;|
-| [24](./Aula24/) | 25/06 | **Introdução à grafos** | Introdução: conceitos e formas de representação<br/>[Slides](./Aula24/Introducao%20a%20grafos%20-%20teoria%20e%20aplicacoes.pdf) | &nbsp;|
-| [25](./Aula25/) | 28/06 | **Introdução à grafos** | Busca em grafos<br/> | &nbsp;|
+| [24](./Aula24/) | 25/06 | **Introdução à grafos** | Introdução: conceitos básicos<br/>[Slides](./Aula24/Introducao%20a%20grafos%20-%20teoria%20e%20aplicacoes.pdf) | &nbsp;|
+| [25](./Aula25/) | 28/06 | **Introdução à grafos** | Formas de representação e busca<br/>[Slides](https://docs.google.com/presentation/d/1ai_K3WtWn-iiCP16tj7JGbbPcPEeWa8h5MTJd_deMY8/) | &nbsp;|
 | [26](./Aula26/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
 | [27](./Aula27/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
 | [28](./Aula28/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
