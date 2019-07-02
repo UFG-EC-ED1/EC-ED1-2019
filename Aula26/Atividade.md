@@ -10,7 +10,7 @@ Os problemas a serem resolvidos estão disponíveis na plataforma URI. Todos os 
 
 2. [O Rato no Labirinto](https://www.urionlinejudge.com.br/judge/pt/problems/view/1799)
 
-  Este problema consiste em encontrar o menor caminho entre dois pontos em um grafo não-dirigido e sem pesos. Primeiramente é preciso encontrar o menor caminho entre o vértice representando a entrada do labirinto e o vértice representando a posição do queijo. Em seguida o menor caminho entre  A solução pode ser construída a partir de uma busca em largura, conforme discutido na aula anterior.
+  Este problema consiste em encontrar o tamanho do menor caminho entre dois pontos em um grafo não-dirigido e sem pesos. Primeiramente é preciso encontrar o menor caminho entre o vértice representando a entrada do labirinto e o vértice representando a posição do queijo. Em seguida o menor caminho entre  A solução pode ser construída a partir de uma busca em largura, conforme discutido na aula anterior.
 
 
 
