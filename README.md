@@ -29,7 +29,7 @@
 | [23](./Aula23/) | 18/06 | **Avaliação** | Prova 2<sup>a</sup> chamada - Sala 204<br/>[Questões](./Aula23/Prova1-2ndChamada.pdf), [Respostas](./Aula23/Prova1-2ndChamada-solucao.pdf) | &nbsp;|
 | [24](./Aula24/) | 25/06 | **Introdução à grafos** | Introdução: conceitos básicos<br/>[Slides](./Aula24/Introducao%20a%20grafos%20-%20teoria%20e%20aplicacoes.pdf) | &nbsp;|
 | [25](./Aula25/) | 28/06 | **Introdução à grafos** | Formas de representação e busca<br/>[Slides](https://docs.google.com/presentation/d/1ai_K3WtWn-iiCP16tj7JGbbPcPEeWa8h5MTJd_deMY8/) | &nbsp;|
-| [26](./Aula26/) | 02/07 | **Introdução à grafos** | <br/> | &nbsp;|
+| [26](./Aula26/) | 02/07 | **Introdução à grafos** | Formas de representação e busca<br/> | Atividade 9: Busca em grafos [Enunciado](./Aula26/Atividade.md)|
 | [27](./Aula27/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
 | [28](./Aula28/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
 | [29](./Aula29/) | 12/07 | **Avaliação** | <br/> | &nbsp;|
