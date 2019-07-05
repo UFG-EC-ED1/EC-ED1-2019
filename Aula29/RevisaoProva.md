@@ -85,10 +85,12 @@ Dado o grafo abaixo, construa sua representação como matriz de adjacência e l
 
 1. Dado o grafo abaixo, escreva uma lista da ordem em que os vértices serão visitados em uma busca por profundidade a partir do nó X. Considere que os nós vizinhos são sempre percorridos em ordem crescente.
 
-2. Dado o grafo abaixo, escreva uma lista da ordem em que os vértices serão visitados em uma busca por profundidade a partir do nó X. Considere que os nós vizinhos são sempre percorridos em ordem crescente.
+2. Dado o grafo abaixo, escreva uma lista da ordem em que os vértices serão visitados em uma busca em largura a partir do nó X. Considere que os nós vizinhos são sempre percorridos em ordem crescente.
 
-3. Simular e encontrar um problema em um algoritmo de busca em grafos. Será fornecido um algoritmo de busca com algum problema. Você deverá simular a execução do algoritmo e comparar com a saída esperada (item 1).
+3. Simular e encontrar um problema em um algoritmo de busca em grafos. Será fornecido um algoritmo de busca com algum problema. Você deverá simular a execução do algoritmo e comparar com a saída esperada (itens 1 ou 2).
 
 ### Outros
 
-Explicar as aplicações de busca em largura/profundidade para resolução de problemas em grafos
+Explicar as aplicações de busca em largura/profundidade para resolução de problemas em grafos.
+
+Explicar aplicações de tipos abstratos de dados adequados em algoritmos de busca
