@@ -41,6 +41,11 @@ NoArvore *encontra(NoArvore *raiz, int chave) {
 }
 ```
 
+
+### Árvores binárias
+
+Dados os percursos em-ordem e pós-ordem reconstrua a árvore
+
 ### Árvores binárias de busca
 
 Considere uma **árvore binária de busca** criada a partir da inserção dos seguintes itens, na seguinte ordem:
@@ -49,7 +54,7 @@ Considere uma **árvore binária de busca** criada a partir da inserção dos se
 
 a. Construa e desenhe a árvore de busca obtida.
 
-b. Quais as propriedades da árvore? É balanceada, completa, cheia, etc...? Qual sua altura, largura, número de folhas, etc.
+b. Quais as propriedades da árvore? É balanceada, completa, cheia, estritamente binária, etc...? Qual sua altura, largura, número de folhas, etc.
 
 c. Simule os quatro tipos de percursos na árvore (pré-ordem, pós-ordem, em-ordem e por nível)
 e escreva os itens visitados, na ordem em que serão visitados, por cada percurso.
@@ -62,23 +67,6 @@ e. Qual a árvore obtida a partir da remoção de um novo item (4 por exemplo)
 ### Árvores binárias de busca
 
 Construa uma árvore binária de busca de altura mínima, contendo as seguintes chaves 1, 2, 3, 4, 5, 6, 7.
-
-###  Árvores binárias de busca
-
-O código abaixo deveria verificar se uma árvore binária é uma árvore de busca, no
-entanto há algum erro na implementação que
-
-```C
-bool eh_arvore_de_busca(NoArvore *raiz, int min, int max) {
-  if (raiz == NULL) {
-    return true;
-  } else if (raiz->chave < min || raiz->chave > max) {
-    return false;
-  } else {
-    return eh_arvore_de_busca(raiz->esq, min, raiz->chave) && eh_arvore_de_busca(raiz->dir, raiz->chave, max);
-  }
-}
-```
 
 
 ### Árvores genéricas e percursos
