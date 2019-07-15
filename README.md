@@ -32,7 +32,7 @@
 | [26](./Aula26/) | 02/07 | **Introdução à grafos** | Formas de representação e busca<br/> | Atividade 9: Busca em grafos [Enunciado](./Aula26/Atividade.md)|
 | [27](./Aula27/) | 05/07 | **Introdução à grafos** | Aplicações utilizando Grafos (Caminhos Mínimos e Árvore Geradora Mínima)<br/> | &nbsp;|
 | [28](./Aula28/) | 09/07 | **Introdução à grafos** | <br/> | &nbsp;|
-| [29](./Aula29/) | 12/07 | **Avaliação** | Prova escrita - Sala 204 - Árvores e grafos<br/>[Revisão](./Aula29/RevisaoProva.md) | &nbsp;|
+| [29](./Aula29/) | 12/07 | **Avaliação** | Prova escrita - Sala 204 - Árvores e grafos<br/>[Conteúdo](./Aula29/RevisaoProva.md), [Questões](./Aula29/Prova2.pdf), [Respostas](./Aula29/Prova2-respostas.pdf) | &nbsp;|
 | [30](./Aula30/) | 16/07 | **Entrega de notas** | <br/> | &nbsp;|
 
 
